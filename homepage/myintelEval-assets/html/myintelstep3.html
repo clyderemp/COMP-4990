@@ -1,0 +1,76 @@
+
+<link rel="stylesheet" href="../myintelEval-assets/css/style.css" />
+
+<div class=sequence>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+</div>
+<div data-aos="fade-in" data-aos-duration="1000" id=maincontent class="content" >
+    <div class="row row-card-no-pd">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="top-container">
+                    <h1>Interest Evaluation</h1>
+                    <p>Third Step: Let us help you find your best suited faculty that will help you achieve GREATER things in life!</p>
+                    <div class="progress-container">
+                        <ul class="progress-steps">
+                            <li class='done'>myIntel Evaluation</li>
+                            <li class="done">IQ Test</li>
+                            <li class="activeStep">Interest Evaluation</li>
+                            <li>Learning Style</li>
+                            <li>Evaluation Preference</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header" id="myHeader">
+                    <h2>Interest Evaluation
+                        <button class="btn btn-icon btn-link btn-primary btn-lg" id="topRight"><span class="fa fa-angle-up fa-2x" style="color: white;"></span></button>
+                    </h2>
+                    
+                  </div>
+
+                <div class="card-header">
+                    <div class="card-head-row card-tools-still-right">
+                        <h4 class="card-title">STEP 3 of 5: Interest Evaluation</h4>
+                        <div class="card-tools">
+                            <button class="btn btn-icon btn-link btn-primary btn-md" id='infoBtn'><span class="fa icon-information fa-lg"></span></button>
+                        </div>
+                    </div>
+                    <p class="card-category">
+                        We will use your interests data to find best suited elective courses for you to succeed it and also find your best-suited faculty
+                        if a change of career becomes one of your options.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id=formPanel>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id='termsAndConditions'>
+                        <div class="col-md-12 buttons" style='text-align: center;'>
+                            <a href='#'>View Terms and Conditions</a>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input id=step3checkbox class="form-check-input" type="checkbox" value="">
+                                    <span class="form-check-sign" style="width:100%">I have answered ALL 30 questions with full honesty.</span>
+                                </label>
+                            </div>
+                            <button id=reset class="clear">Clear</button>
+                            <button id=submitBtn onclick=submit() class="submit" disabled>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="../myintelEval-assets/js/step3.js"></script>
+    <script src="../myintelEval-assets/js/scroller.js"></script>

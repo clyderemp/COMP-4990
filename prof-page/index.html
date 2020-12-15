@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>MyAccount - Professor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/preloader.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="icon" href="../assets/img/logo2.jpg" width=100% height=100%>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper-->
+			<div id="wrapper">
+				<div class=sequence>
+					<div id="loader-wrapper">
+						<div id="loader"></div>
+					</div>
+				</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-book-open"><span>myCourses</span></a>
+						<a href="#contact" class="icon solid fa-inbox"><span>myInbox</span></a>
+						<a onclick=proflogout() href="#" class="icon solid fa-sign-out-alt"><span>Sign out</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1 id=profname></h1>
+									<p id=profschool></p>
+									<p id=idnum></p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span><span></span></span>
+									<img src="../assets/img/logo2.JPG" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<a><img href="#home" src="../assets/img/logo2.JPG" width="10%"></a>
+									<h2 class=blue><em class=yellow>my</em>Courses</h2>
+								</header>
+								<p>
+									As a professor, you must provide information for the courses you will be teaching in the upcoming semester.
+								</p>
+								<section>
+									<div class="panel">
+										<div class="collapsible-container">
+											<button id="currentSem"  type="button" class="collapsible-btn">Upcoming Semester</button>
+										</div>
+										<div id=load class="loader"></div>
+										<div id = currentSem-content class=collapsible-content>
+											<div id=box class=box>
+												<select id="courseDrop" value="none" onchange=showCourse(this.value)>
+													<option value="none" id=noneBtn>Please select a course</option>
+												</select>
+											</div>
+											<div id=load2 class="loader"></div>
+											<div id=courseContent>
+													<div class=box>
+														<div class=right-side>
+															<h3>Previous Class Average: </h3>
+																<input id=percentBox type="number" placeholder="%" oninput=saveChanges()>
+															<h3>Exam Evaluation Style: </h3>
+																<textarea id=evaluationBox oninput = saveChanges() placeholder="Describe how students will be evaluated such as in exams, projects, etc."></textarea>
+														</div>
+														<div class=left-side>
+															<h3>Workload: </h3>
+															<select value="none" id="workloadDrop" onchange = saveChanges()>
+																<option value="low">Low</option>
+																<option value="med">Medium</option>
+																<option value="high">High</option>
+															</select>
+														
+														<h3>Difficulty: </h3>
+															<select value="none" id="difficultyDrop" onchange = saveChanges()>
+																<option value="low">Low</option>
+																<option value="med">Medium</option>
+																<option value="high">High</option>
+															</select>
+														
+														<h3>Learning Style: </h3>
+															<select value="none" id="learningDrop" onchange = saveChanges()>
+																
+																<option value="application">Application</option>
+																<option value="theory">Theory</option>
+																<option value="project">Project</option>
+																<option value="coop-work">Co-op/Work-term</option>
+															</select>
+
+														</div>
+														
+														<div class=fullsize>
+															<h3>Course Description:</h3>
+															<textarea id=courseDescription placeholder="Describe the course in your own words..." rows="6"  oninput = saveChanges()></textarea>
+														
+															<p id=warningMessage></p>
+															<div id=newChanges>
+																<button id=saveButton>Save changes</button>
+															</div>
+														</div>
+														
+														
+													</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>myAcAdvisor&copy; 2020.</li><li><a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery-1.11.3.min.js"></script>
+			
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="../authorizepage/js/firebase.js"></script>
+			<script src="../authorizepage/js/teacher-login.js"></script>
+			<script src="assets/js/userfileLoader.js"></script>
+			<script src="assets/js/collapsibleManager.js"></script>
+			<script src="assets/js/semesterManager.js"></script>
+			
+
+	</body>
+</html>

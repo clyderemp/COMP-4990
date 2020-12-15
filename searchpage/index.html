@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>MyCoursePlanner</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-style.css">
+
+                     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"></a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul id=navbar class="nav navbar-nav">
+                         <li><a id=newSearchBtn href="#home" class="smoothScroll">New Search</a></li>
+                         <li><a id=resultsBtn href="#courses" class="smoothScroll">Search Results</a></li>
+                         <li><a id=plannerBtn href="#coursePlanner" class="smoothScroll">myCoursePlanner</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a onclick=deleteAllFiles() href="../homepage/myaccount.html">MyAccount</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- MAIN -->
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class=" col-md-12 col-sm-12">
+                        <h1><img src="../assets/img/logo1.png"></h1>
+                        <h2 id=schoolDatabase>accessing your school database...</h2>
+                         <div class="home-info"  style="padding-right: 100px;">
+                              <div class="online-form">
+                                   <input id=input type="text" name="course" class="form-control" placeholder="Search courses here.." required="">
+                                   <button onclick=grabCourseData(input.value) class="form-control">Search</button>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+     <!-- SEARCH RESULTS -->
+     <section id="courses" data-stellar-background-ratio="0.5">
+          <div class="container" class="smoothScroll">
+               <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                         <div class="section-title">
+                              <h1 id=resultsForHeader>Results</h1>
+                         </div>
+                         <div id=resultsContent class=resultsContentPanel>
+                              <table class="searchTable">
+                                   <thead>
+                                        <tr id=tableheader class="table-header">
+                                        </tr>
+                                   </thead>
+                                   <tbody id=resultTable>
+                                   </tbody>
+                              </table>
+                          </div>
+                    </div>
+               </div>
+          </div>
+     </section>   
+     
+          <!-- SEARCH RESULTS -->
+     <section id="coursePlanner" data-stellar-background-ratio="0.5">
+          <div class="container" class="smoothScroll">
+               <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                         <div class="section-title">
+                              <h1>myCoursePlanner</h1>
+                         </div>
+                         <div id=resultsContent2 class=resultsContentPanel>
+                              <table class="searchTable">
+                                   <thead>
+                                        <tr id=tableheader2 class="table-header">
+                                        </tr>
+                                   </thead>
+                                   <tbody id=resultTable2>
+                                   </tbody>
+                              </table>
+                          </div>
+                    </div>
+               </div>
+          </div>
+     </section>  
+
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="copyright-text col-md-12 col-sm-12">
+                         <div class="col-md-6 col-sm-6">
+                              <p>Copyright &copy; 2020
+                				<a rel="nofollow">myAcAdvisor</a></p>
+                         </div>
+
+                         <div class="col-md-6 col-sm-6">
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="../assets/js/jquery-1.11.3.min.js"></script>
+     <script src="../homepage/js/vendor/bootstrap.min.js"></script>
+     <script src="../authorizepage/js/firebase.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="js/searchCourses.js"></script>
+
+</body>
+</html>

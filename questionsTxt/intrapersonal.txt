@@ -1,0 +1,31 @@
+INTRAPERSONAL
+1) You are well aware of both your strengths and weaknesses.
+{Yes,No} --> 0
+2) You are very independent and self directed. You don't like being told what to do.
+{Yes,No} --> 0
+3) You like learning more about yourself and your inner psychology.
+{Yes,No} --> 0
+4) You trust your instincts, and you are good at following them.
+{Yes,No} --> 0
+5) You are a unique, original person - and you like being that way.
+{Yes,No} --> 0
+6) If you're feeling bad, you're usually able to discover the root of your negative emotions.
+{Yes,No} --> 0
+7) You spend a lot of time thinking about life and reflecting on your place in the world.
+{Yes,No} --> 0
+8) You prefer to undertake projects alone. You like flying solo.
+{Yes,No} --> 0
+9) You have a very philosophical outlook on life - and it's always evolving.
+{Yes,No} --> 0
+10) You are ambitious and confident in your own abilities.
+{Yes,No} --> 0
+11) A communicator's internal use of language or thought.
+{interpersonal communication,intrapersonal communication,Communication,human communication} --> 1
+12) Wondering whether you should have a cheeseburger or a salad be an example of:
+{Perception,Self-disclosure,Self-talk,Closure} --> 2
+13) Hearing your alarm clock going off in the morning would be an example of:
+{Sensory perception,Selective perception,Personal perception,External perception} --> 0
+14) Your perception of yourself and social expectations determine
+{your personality.,your self-concept.,the roles you play.,your childhood experiences.} --> 2
+15) Interpersonal and Intrapersonal communication are the same.
+{True,False} --> 1

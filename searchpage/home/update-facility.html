@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Facility Manager</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700"/>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="icon" href="../img/logo/icon-logo.png" width=100% height=100%>
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+  </head>
+
+<!--HEADER NAVIGATION-->
+<body id="reportsPage">
+  
+  <!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+  </div>
+
+  <!--NAV BAR-->
+  <div class="" id="home">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container h-100">
+          <h1 class="tm-site-title mb-0"><img src="../img/logo/banner-logo.png" width="50%" ></h1>
+          <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars tm-nav-icon"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto h-100">
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" href="index.html">
+                          <i class="fas fa-tachometer-alt"></i>Dashboard
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="far fa-file-alt"></i>
+                          <span>
+                              Reports <i class="fas fa-angle-down"></i>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Wait Time Report</a>
+                          <a class="dropdown-item" href="#">Traffic Report</a>
+                          <a class="dropdown-item" href="#">Daily Report</a>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" href="livecounter.html"><i class="fas fa-clock"></i>Live Counter</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="far fa-user"></i>
+                          <span>
+                              Facility Manager <i class="fas fa-angle-down"></i>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="add-facility.html">Add Facilities</a>
+                          <a class="dropdown-item" href="update-facility.html">Update Facilities</a>
+                          <a class="dropdown-item" href="delete-facility.html">Delete Facilities</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-cog"></i>
+                          <span>
+                              Settings <i class="fas fa-angle-down"></i>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Account Settings</a>
+                          <a class="dropdown-item" href="#">Billing Information</a>
+                          <a class="dropdown-item" href="#">Contact Us</a>
+                      </div>
+                  </li>
+              </ul>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link d-block" href="" onclick=logout()>
+                          <b>LOGOUT</b>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  
+
+      <!--SELECT DROPDOWN-->
+      <div id = "updateSelect" class="container mt-5">
+        <div class="row tm-content-row">
+          <div class="col-12 tm-block-col">
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+              <h2 class="tm-block-title" id="facility-info">Update Manager - Facilities you currently have </h2>
+              <select id="facilitydrop" class="custom-select" onchange=getUpdateData(this.value)>
+                <label><option value="">---Select a facility to be updated---</option></label>
+            </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!--FACILITY INFO PANEL-->
+      <div id="updatepanel" class="container mt-5">
+        <div class="row tm-content-row">
+          <div class="tm-block-col tm-col-avatar">
+            <div class="tm-bg-primary-dark tm-block tm-block-avatar">
+              <h2 class="tm-block-title">Upload your facility photo</h2>
+
+              <!--AVATAR REGION-->
+              <div class="tm-avatar-container">
+                <img src="/home/img/avatar.png" alt="Avatar" class="tm-avatar img-fluid mb-4" />
+                <a href="#" class="tm-avatar-delete-link">
+                  <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                </a>
+              </div>
+              <button class="btn btn-primary btn-block text-uppercase">
+                Choose a new one
+              </button>
+            </div>
+          </div>
+
+          <!--INFO RIGHT PANEL-->
+          <div class="tm-block-col tm-col-account-settings">
+            <div class="tm-bg-primary-dark tm-block tm-block-settings">
+              <h2 class="tm-block-title" id="facility">Facility</h2>
+              <!--FORM STARTS-->
+              <form action="" class="tm-signup-form row">
+
+                <div class="form-group col-lg-12">
+                  <label for="name">Facility Name</label>
+                  <input id="facilityname" name="name" type="text" class="form-control validate" required/>
+                </div>
+
+                <div class="form-group col-lg-12">
+                  <label for="name">Address</label>
+                  <input id="address" name="address" type="text" class="form-control validate" required/>
+                </div>
+
+                <div class="form-group col-lg-6">
+                  <label for="password">Phone Number</label>
+                  <input id="phone" name="phone" type="tel" class="form-control validate" required/>
+                </div>
+
+                <div class="form-group col-lg-6">
+                  <label for="password2">Current Max Capacity</label>
+                  <input id="max" name="max" type="number" class="form-control validate" required/>
+                </div>
+
+                <div class="col-12">
+                  <button type="button" onclick=getUpdateData("save",true) class="btn btn-primary btn-block text-uppercase">
+                    Save Changes
+                  </button>
+                </div>
+                <!--END OF FORM-->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--FOOTER-->
+  <footer>
+    <div class="col-12 font-weight-light">
+        <p class="text-center text-white mb-0 px-4 small">
+            PeekSearch &copy; <b>2020</b> All rights reserved. 
+            Design: <a rel="nofollow noopener" href="" class="tm-footer-link">Clyde Rempillo</a>
+        </p>
+    </div>
+  </footer>
+
+  <!--SCRIPTS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../login/js/firebase.js"></script>
+    <script src="js/update-delete-fac.js"></script>
+    <script src="../js/preloader.js"></script>
+
+
+
+  </body>
+</html>

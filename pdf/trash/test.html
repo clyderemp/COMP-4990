@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>PDF.js</h1>
+    <script src="../node_modules/pdf-parse/index.js"></script>
+    <script>
+
+const pdffile = fs.readFileSync('transcript2.pdf');
+
+
+//get info
+
+pdfparse(pdffile).then(function (data){
+    console.log(data.numpages);
+
+    console.log(data.text);
+
+    //extracts file and output it
+    fs.writeFile('out.txt', data.text, (err) => {
+        if (err) throw err; 
+    })
+})
+    </script>
+</body>
+
+</html>

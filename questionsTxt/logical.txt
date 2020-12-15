@@ -1,0 +1,55 @@
+LOGICAL
+1) 10 : 6 :: 3 : ?
+{2,-1,1,12,4} --> 1
+2) 20 : 12 :: 5 : ?
+{3,15/4,3.5,2,5/3} --> 0
+3) 4 : 256 :: 5 : ?
+{526,625,125,726} --> 1
+4) 111,253,111 : 5 :: 111,954,111 : ?
+{4,45,13,14} -->
+5) 48 : 610 :: 39 : ?
+{362,975,511,602,353} -->
+6) 322 : 12 :: 421 : ?
+{15,7,8,16,9} -->
+7) 91827 : 364554 :: 369 : ?
+{46835,151821,84962,121518,163472} -->
+8) 2, 5, 8, 11, 12, 15, 18, 21 ... ?
+{25,27,28,24} --> 3
+9) 1, -4, 8, 3, -6, -11, 22, 17 ... ?
+{12,-34,7,-51} --> 1
+10) 2, 6, 3, 1, 3, 0, 0, 0, -3, -1, -3, -6, -2 ... ?
+{} -->
+11) -2, 1/2, -1, -1/2, 1/2, -1/4, -1/8, 1/32 ... ?
+{} -->
+12) 225, 4, 196, 9, 169, 16, 144, 25 ... ?
+{121,36,100,49} --> 0
+13) 8, 1, 3, 9, 2, 4, 10, 3, 5, 11 ... ?
+{} -->
+14) 1, 2, 3, 7, 11, 20, 29, 45, 61 ... ?
+{111,81,86,72} --> 2
+15) The three sides of a figure are in the ratio 1 : 3 : 5. The perimeter of the three-sided figure is 72. Find the length of each of the three sides.
+{9 : 27 : 45,12 : 24 : 36,8 : 24 : 40,7 : 21 : 35} --> 2
+16) John is three times as old as Greg, and Greg is half the age of Bob. Steve is two times the age of John and Bob combined. If Steve's age is 60, how old is Greg's older cousin Jane, who is 2 years older than Greg?
+{24,34,12,18} --> 1
+17) There is a 10 x 10 x 10 cubical box with no lid. It is filled with cubes 1 x 1 x 1. How many of the cubes touch the sides of the box with at least one face?
+{255,440,600,550} --> 1
+18) Draw five straight lines overlapping in any way you wish. What is the greatest number of enclosed spaces that can be formed by the overlapping lines?
+{} -->
+19) In the following arrangement, what would be the first number in the 100th line?
+1  2  3
+4  5  6  7
+8  9  10  11  12
+13  14  15  16  17  18
+{} -->
+20) There are three boxes of balls of different colours, each labeled accordingly. One lid is labeled "green and yellow", another lid is labeled "blue" and the other, "yellow". However, all of the lids have gotten mixed up, and none of them are now on the correct boxes. It is your job to determine which box holds which set of balls. You are allowed to open only one box, and, without looking, reach in a take out one ball. Which is the one box you should NOT open?
+{The box with the lid labeled "green and yellow",The box with the lid labeled "blue",The box with the lid labeled "yellow",The box with the lid labeled "yellow" and the box labeled "blue",None of them - opening any of them would give you the correct answer} --> 0
+21) The derivative of x^2 = ?
+{2,2x,x,2x^2} --> 1
+22) If you have A -> B, and ~A then you get?
+{~B,B,~B -> ~A,A and ~B} --> 3
+23) If A -> B, and B -> C then?
+{A -> C,A = C,B,C -> A} --> 0
+24) Solve for x, 28 = 5x + 3
+{31/5,5,20,3} --> 1
+25) a^2 + b^2 = ?
+{c,c^3,c^2,ab^2} --> 2

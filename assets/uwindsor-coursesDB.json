@@ -1,0 +1,156 @@
+{
+  "University of Windsor" : {
+    "COMP" : {
+      "1000" : {
+        "coursename": "Key Concepts in Comp-Sci",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "1047" : {
+        "coursename": "Computer Concepts for End-Users",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "1400" : {
+        "coursename": "Intro to Algorithms I",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "1410" : {
+        "coursename": "Intro to Algorithms II",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2057" : {
+        "coursename": "Intro to the Internet",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2067" : {
+        "coursename": "Programming for Beginners",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2077" : {
+        "coursename": "Problem Solving & Info: Internet",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2097" : {
+        "coursename": "Social Media & Mobile Tech-End Users",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2120" : {
+        "coursename": "Obj-Oriented Programming using Java",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2310" : {
+        "coursename": "Theoretical Foundations",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2540" : {
+        "coursename": "Data Structures and Algorithms",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2560" : {
+        "coursename": "Systems Programming",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2650" : {
+        "coursename": "Computer Architecture I: Digital Design",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2707" : {
+        "coursename": "Advanced Website Design",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "2980" : {
+        "coursename": "Co-op Work Term I",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "3057" : {
+        "coursename": "Cyber-Ethics",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "3220" : {
+        "coursename": "Object-Oriented Software Analysis & Design",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "3300" : {
+        "coursename": "Operating Systems Fundamentals",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "3340" : {
+        "coursename": "World Wide Web Info System Development",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "3670" : {
+        "coursename": "Computer Networks",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "3980" : {
+        "coursename": "Co-op Work Term II",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "4960A" : {
+        "coursename": "Research Project - Part 1",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "4960B" : {
+        "coursename": "Research Project - Part 2",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "4970" : {
+        "coursename": "Co-op Work Term III",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      },
+      "4980" : {
+        "coursename": "Co-op Work Term IV",
+        "Difficulty": "Easy",
+        "Workload": "Medium",
+        "Learning-Style": "Application"
+      }
+    }
+  }
+}

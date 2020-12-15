@@ -1,0 +1,294 @@
+<!--
+    HTML FILE FOR THE LOG IN PAGE
+    Author: Clyde Rempillo
+    Last edit: April 26, 2020
+    Summary of last edit:
+        Just made sure that reset button appeared when needed
+-->
+
+<!DOCTYPE html>
+
+<html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MyAccount Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="icon" href="../assets/img/logo2.jpg" width=100% height=100%>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="site-bg"></div>
+        <div class="site-bg-overlay"></div>
+
+        <!--    TOP HEADER  -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p class="phone-info">My<a href="../index.html">AcAdvisor</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                                <li><a href="#" class="fa fa-dribbble"></a></li>
+                                <li><a href="#" class="fa fa-rss"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- END top-header -->
+
+        <!--    MENU FOR DESKTOP MODE   -->
+        <div class="visible-xs visible-sm responsive-menu">
+            <a href="#" class="toggle-menu">
+                <i class="fa fa-bars"></i> MyAccount Menu
+            </a>
+            <div class="show-menu">
+                <ul class="main-menu">
+                    <li>
+                        <a class="show-1 active studentbutton" href=""><i class="fa fa-users"></i>Student</a>
+                    </li>
+                    <li>
+                        <a class="show-2 employerbutton" href=""><i class="fa fa-file-text-o"></i>Employer</a>
+                    </li>
+                    <li>
+                        <a class="show-3 profbutton" href=""><i class="fa fa-briefcase"></i>Educator</a>
+                    </li>
+                    <li>
+                        <a class="show-4 adminbutton" href=""><i class="fa fa-files-o"></i>Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--    END MENU FOR DESKTOP MODE   -->
+
+        <!--    LEFT CONTAINER FOR DESKTOP MODE   -->
+        <div class="container" id="page-content">
+            <div class="row">
+                
+                <div class="col-md-9 col-sm-12 content-holder">
+                    <!-- CONTENT -->
+                    <div id="menu-container" >
+                        
+                        <div class="logo-holder logo-top-margin">
+                            <a href="../index.html" class="site-brand"><img src="../assets/img/logo2.JPG" alt="" width="100px" height="100px"></a>
+                        </div>
+                        
+                        <!--    LOGIN FORM FOR DESKTOP MODE   -->
+                        <div id="menu-1" class="homepage home-section text-center">
+                            <div class="welcome-text">
+                                <h2 id="welcome">Welcome to <strong><span class="yellow">My</span><span class="blue">Account</span></strong></h2>
+                                <p id="welcomeText" ></p>
+
+                                <form action="#" method="get" class="login-form">
+                                    <div class="row">
+                                        <div class=login-div>
+
+                                            <h2 id="message">You are logged in as<br><strong>
+                                                <span id="fname" class="yellow">My</span>
+                                                <span id="lname" class="blue">Account</span></strong>
+                                            </h2>
+
+                                            
+                                            <input type="email" id="email_field" placeholder="Email..." required/><br>
+                                            <input type="password" id="password_field" placeholder="Password..." required/><br>
+                                            <input type="button" class="button" id="signup-button" value="Sign up">
+                                            <input onclick=login() type="button" class="button" id="login-button" value="Login"><br><br>
+                                            <input onclick=resetEmail() type="button" class="button" id="resetbtn" value="Reset password"><br>
+                                            <input id="continue" onclick=continuetoMyAccount() type="button" class="button" value="Go To MyAccount"><br><br>
+                                            <input id="logout-button" onclick=logout() type="button" class="button" id="logout-button" value="Logout">
+                                        </div>  
+                                    </div>
+                                                <p id="warning" class="subscribe-text"></p>
+                                </form>
+                            </div>
+                        </div>
+                        <!--    LOGIN FORM ENDS  -->
+
+
+
+                        <!--LOG IN AS A EMPLOYER-->
+                        
+                        <div id="menu-2" class="content parent-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content signin" style="background-color: transparent;">
+                                        <h3 class="widget-title">
+                                            Welcome to <strong><span class="yellow">My</span><span class="blue">Employer</span></strong> Account
+                                        </h3>
+                                            <input style="color: white;" type="email" id="employer_email" placeholder="Email..." required/><br>
+                                            <input style="color: white;" type="password" id="employer_pass" placeholder="Password..." required/><br>
+                                        <div class=parent-teacher-admin-btn>
+                                                <input type="button" class="button" onclick="javascript: $('#signup-button').trigger('click')" value="Sign up">
+                                                <input onclick=employerlogin() type="button" class="button" id="login-button" value="Login">
+                                                <div id=resetEmployer></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Announcements for Employers</h3>
+                                        <p>This site is still under construction.<br>
+                                        Employers will be able to post, edit and delete job postings.<br>
+                                        View applicants reports will also be accessible.</p>
+                                        <div class="info">
+                                            <ul>
+                                                <li><a href="#" class="fa fa-question"></a></li>
+                                                <li><a href="#" class="fa fa-pencil"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!--LOG IN AS A PROF-->
+                        <div id="menu-3" class="content teacher-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content signin" style="background-color: transparent;">
+                                        
+                                        <h3 class="widget-title">
+                                            Welcome to <strong><span class="yellow">My</span><span class="blue">Teacher</span></strong> Account
+                                        </h3>
+                                            <input style="color: white;" type="email" id="email_prof" placeholder="Email..." required/><br>
+                                            <input style="color: white;" type="password" id="password_prof" placeholder="Password..." required/><br>
+                                        <div class=parent-teacher-admin-btn>
+                                                <input onclick=teacherlogin() type="button" class="button" id="login-button" value="Login">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Announcements for Teachers</h3>
+                                        <p>This site is still under construction</p>
+                                        <div class="info">
+                                            <ul>
+                                                <li><a href="#" class="fa fa-question"></a></li>
+                                                <li><a href="#" class="fa fa-pencil"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--LOG IN AS A admin-->
+                        <div id="menu-4" class="content admin-section">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-8">
+                                    <div class="box-content" style="background-color: transparent;">
+                                        
+                                        <h3 class="widget-title">
+                                            Welcome to <strong><span class="yellow">My</span><span class="blue">Admin</span></strong> Account
+                                        </h3>
+                                            <input style="color: white;" type="email" id="email_admin" placeholder="Email..." required/><br>
+                                            <input style="color: white;" type="password" id="password_admin" placeholder="Password..." required/><br>
+                                        <div class=parent-teacher-admin-btn>
+                                                <input onclick=adminlogin() type="button" class="button" id=admin-login value="Login">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="box-content">
+                                        <h3 class="widget-title">Announcements for Admin</h3>
+                                        <p>This site is still under construction</p>
+                                        <div class="info">
+                                            <ul>
+                                                <li><a href="#" class="fa fa-question"></a></li>
+                                                <li><a href="#" class="fa fa-pencil"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 hidden-sm">
+                    <nav id="nav" class="main-navigation hidden-xs hidden-sm">
+                        <ul class="main-menu">
+                            <li>
+                                <a class="show-1 active studentbutton" href=""><i class="fa fa-users"></i>Student</a>
+                            </li>
+                            <li>
+                                <a class="show-2 employerbutton" href=""><i class="fa fa-file-text-o"></i>Employer</a>
+                            </li>
+                            <li>
+                                <a class="show-3 profbutton" href=""><i class="fa fa-briefcase"></i>Educator</a>
+                            </li>
+                            <li>
+                                <a class="show-4 adminbutton" href=""><i class="fa fa-files-o"></i>Admin</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SITE-FOOTER -->
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>
+                        	Copyright &copy; 2020 MyAcAdvisor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .site-footer -->
+        	<!-- Page Preloder -->
+	<div id="loader-wrapper">
+            
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        
+        <script src="js/firebase.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/loginpagesender.js"></script>
+        <script src="js/loginpreload.js"></script>
+        <script src="js/usertypeManager.js"></script>
+        <script src="js/signup.js"></script>
+        <script src="js/student-login.js"></script>
+        <script src="js/employer-login.js"></script>
+        <script src="js/teacher-login.js"></script>
+        <script src="js/adminlogin.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>MyAccount - Home</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../../assets/img/logo2.JPG" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.css">
+	<link rel="stylesheet" href="../../assets/css/preloader.css">
+	<link rel="stylesheet" href="../assets/css/myprofile.css">
+
+	<!--Timetable-->
+	<script>document.getElementsByTagName("html")[0].className += " js";</script>
+	<link rel="stylesheet" href="../timetable-assets/css/style.css">
+
+	<!--PDF Parser-->
+	<link href=../../pdf/parser/ladda-themeless.min.css rel=stylesheet>
+	<script src=../../pdf/parser/pdf.min.js></script>
+	<link rel="stylesheet" href="../assets/css/preloader-fade.css">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+
+</head>
+<body>
+
+	
+	<div class="wrapper sidebar_minimize">
+		<div class=sequence>
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+		
+			</div>
+		</div>
+
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+				<a href="#mainpage" class="logo">
+					<img src="../../assets/img/title.png" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+				
+				<div class="container-fluid">
+					<div class="collapse" id="search-nav">
+						<form class="navbar-left navbar-form nav-search mr-md-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<button type="submit" class="btn btn-search pr-1">
+										<i class="fa fa-search search-icon"></i>
+									</button>
+								</div>
+								<input type="text" placeholder="Search here..." class="form-control">
+							</div>
+						</form>
+					</div>
+					<ul id="topbarBtn" class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item toggle-nav-search hidden-caret">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+								<i class="fa fa-search"></i>
+							</a>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="javascript: location.reload();" role="button" aria-expanded="false">
+								<i class="fa fa-home"></i>
+							</a>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="javascript: void(0);" id="messageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fa fa-envelope"></i>
+							</a>
+							<ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+								<li>
+									<div class="dropdown-title d-flex justify-content-between align-items-center">
+										Messages 									
+										<a href="javascript: void(0);" class="small">Mark all as read</a>
+									</div>
+								</li>
+								<li>
+									<div class="message-notif-scroll scrollbar-outer">
+										<div class="notif-center">
+											<a href="javascript: void(0);">
+												<div class="notif-img"> 
+												</div>
+												<div class="notif-content">
+													<span class="subject">Messaging not available</span>
+													<span class="block">
+														Feature Coming Soon...
+													</span>
+													<span class="time"></span> 
+												</div>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="javascript: void(0);" id="notifDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								
+							</a>
+							<ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown" id="notifdroppanel">
+								<li>
+									<div class="dropdown-title" id="notificationmessage">You have 0 new notification</div>
+								</li>
+								<li>
+									<div class="notif-scroll scrollbar-outer">
+										<div class="notif-center" id="notificationPanel">
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link" data-toggle="dropdown" href="javascript: void(0);" aria-expanded="false">
+								<i class="fas fa-layer-group"></i>
+							</a>
+							<div class="dropdown-menu quick-actions quick-actions-info animated fadeIn">
+								<div class="quick-actions-header">
+									<span class="title mb-1">MyServices Portal</span>
+									<span class="subtitle op-8">Shortcuts</span>
+								</div>
+								<div class="quick-actions-scroll scrollbar-outer">
+									<div class="quick-actions-items">
+										<div class="row m-6">
+											<a class="col-4 col-md-4 p-2" href="javascript: {window.scrollTo(0, 1250);}">
+												<div class="quick-actions-item">
+													<img src="../../assets/img/shortcutlogos/MyJobPostings1.png"/>
+												</div>
+											</a>
+											<a class="col-4 col-md-4 p-2" href="javascript: void(0);">
+												<div class="quick-actions-item">
+													<img src="../../assets/img/shortcutlogos/myaccount1.png"/>
+												</div>
+											</a>
+											<a class="col-4 col-md-4 p-2" href="javascript: void(0);">
+												<div class="quick-actions-item">
+													<img src="../../assets/img/shortcutlogos/MyCompany1.png"/>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="javascript: void(0);" aria-expanded="false">
+								<div class="avatar-sm">
+									<img id="toprightprofpic" src="../../assets/img/logo2.JPG" alt="..." class="avatar-img rounded-circle">
+								</div>
+							</a>
+							<ul class="dropdown-menu dropdown-user animated fadeIn">
+								<div class="dropdown-user-scroll">
+									<li>
+										<div class="user-box">
+											<div class="avatar-lg"><img id="rightpanelprofpic" src="../../assets/img/logo2.JPG" alt="image profile" class="avatar-img rounded"></div>
+											<div class="u-text">
+												<h4 class="username">Student Name</h4>
+												<p id=email class="text-muted">email@domain.com</p>
+												<a href="javascript: viewProfile()" class="btn btn-xs btn-secondary btn-sm">View myProfile</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="javascript: location.reload()">MyDashboard</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="javascript: void(0);" id="accountSettingsBtn">Account Settings</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="javascript: void(0);" onclick=logout()>Logout</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!--LEFT SIDE BAR-->
+		<div class="sidebar sidebar-style-2">			
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<div class="user">
+						<div id=statusIndicator class="avatar avatar-online">
+							<img id="leftpanelprofpic" src="../../assets/img/logo2.JPG" alt="..." class="avatar-img rounded-circle">
+						</div>
+						<div class="info">
+							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									<h4 class="username">Student Name</h4>
+									<span class="user-level" id='user-level'>Student Level</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+
+							<div class="collapse in" id="collapseExample">
+								<ul class="nav">
+									<li>
+										<a id=onlineBtn href="javascript: void(0);">
+											<span id=onlineTxt class="link-collapse">Online</span>
+										</a>
+									</li>
+									<li>
+										<a id=offlineBtn href="javascript: void(0);">
+											<span id=offlineTxt class="link-collapse">Invisible</span>
+										</a>
+									</li>
+									<li>
+										<a id=awayBtn href="javascript: void(0);">
+											<span id=awayTxt class="link-collapse">Away</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav nav-primary">
+						<li class="nav-item active">
+							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+								<i class="fas fa-home"></i>
+								<p>MyAccount Dashboard</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="employer.html">
+											<span class="sub-item">MyDashboard</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div id="mainpage"  class="main-panel">
+			<div class="content">
+				<div class="panel-header bg-primary-gradient">
+					<div class="page-inner py-5">
+						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+							<div>
+								<h2 id=welcomeUser class="text-white pb-2 fw-bold">Loading user...</h2>
+								<h4 id="company" class="text-white pb-2 fw-bold">Loading company info...</h4>
+								<h5 id="phonenum" class="text-white pb-2 fw-bold">Phone Number: </h5>
+							</div>
+							<div class="ml-md-auto py-2 py-md-0">
+								<a href="javascript: void(0);" class="btn btn-white btn-border btn-round mr-2" style="display: none;">View MyProfile</a>
+								<span id="btn" class="btn btn-secondary btn-round btn-file ladda-button" data-style=expand-left>
+									<label for="uploadlogo"><h4>Upload MyLogo</h4>
+									<input type=file id=uploadlogo name=uploadlogo style="display:none;"/></label>
+								</span>
+								<span class="btn btn-secondary btn-round">
+									<label for="postjob"><h4>Post a new job</h4>
+									<input type=button id=postjob name=postjob href="javascript: void(0);"style="display:none;"/></label>
+								</span>
+								  <div id=output></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-inner mt--5">
+					<div class="row mt--2">
+						<div class="col-md-6">
+							<div class="card full-height">
+								<div class="card-body">
+									<div class="card-title">My Account Information</div>
+									<div class="card-category" id="accountinfo">...</div>
+									<div class="d-flex flex-wrap justify-content-around pb-2 pt-4" id="genInfoGraphs">
+										<div class="px-2 pb-2 pb-md-0 text-center">
+											<div id="companyrating"></div>
+											<h6 id="companyrating-title" class="fw-bold mt-3 mb-0"></h6>
+										</div>
+										<div class="px-2 pb-2 pb-md-0 text-center">
+											<div id="recommend"></div>
+											<h6 id="recommend-title" class="fw-bold mt-3 mb-0"></h6>
+										</div>
+										<div class="px-2 pb-2 pb-md-0 text-center">
+											<div id="totaljobs"></div>
+											<h6 id="totaljobs-title" class="fw-bold mt-3 mb-0"></h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6" id="semesterReport">
+							<div class="card full-height">
+								<div class="card-body">
+									<div class="card-body pb-0">
+										<div class="h1 fw-bold float-right text-warning" id="updateprogress">...</div>
+										<h3 class="mb-2" id="applicants-title">...</h3>
+										<p class="text-muted" id="currentapplicants"></p>
+										<p class="text-muted" id="averageapplicants"></p>
+										<div class="pull-in sparkline-fix">
+											<div id="applicantschart"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-head-row">
+										<div class="card-title">Post-Secondary Application Activity</div>
+										<div class="card-tools">
+											<a href="javascript: location.reload();" class="btn btn-info btn-border btn-round btn-sm mr-2">
+												<span class="btn-label">
+													<i class="fa fa-pencil"></i>
+												</span>
+												Retrieve new activity report
+											</a>
+										</div>
+									</div>
+								</div>
+								<div id=myIntelReport class="card-body">
+									<div class="chart-container">
+										<canvas id="schoolactivity"></canvas>
+									</div>
+									<div>
+										<h6 class="fw-bold text-uppercase text-success op-8">Most Active Applicants: </h6>
+										<h8 class="fw-italic" id=activeschool></h8>
+										<h6 class="fw-bold text-uppercase text-danger op-8">Most Active Field of Study: </h6>
+										<h8 class="fw-italic" id=mostactivefield>Coming Soon</h8>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--SEARCH COURSES-->
+					<div class="row row-card-no-pd">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-head-row card-tools-still-right">
+										<h4 class="card-title">MyJob Postings</h4>
+										<div class="card-tools">
+											<button class="btn btn-icon btn-link btn-primary btn-xs" onclick = triggerPostNewJob()><span class="fa fa-plus"></span></button>
+											<button class="btn btn-icon btn-link btn-primary btn-xs" id="jobCollapseBtn"><span id=courseBtnSym class="fa fa-angle-up"></span></button>
+										</div>
+									</div>
+									<p class="card-category">
+										Listed below are the jobs you've posted! Check it out and make sure it is updated!.
+									</p>
+								</div>
+								<div class="card-body" id="tableSection">
+									<div class="table-responsive">
+										<table id="multi-filter-select" class="display table table-striped table-hover" >
+											<thead>
+												<tr id="tableSection-header">
+												</tr>
+											</thead>
+											<tfoot>
+												<tr id="tableSection-footer">
+												</tr>
+											</tfoot>
+											<tbody id="tableSection-content">
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<nav class="pull-left">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.linkedin.com/company/myacadvisor/">
+									LinkedIn Page
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript: void(0);">
+									Help
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="javascript: void(0);">
+									Contact Us
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copyright ml-auto">
+						<i class="fa fa-university university text-warning"></i><a href="https://www.linkedin.com/company/myacadvisor/">myAcAdvisor.ca</a>
+					</div>				
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!--   Core JS Files   -->
+	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="../assets/js/core/popper.min.js"></script>
+	<script src="../assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="../assets/js/atlantis.js"></script>
+
+	<!--Firebase Config-->
+	<script src="../../authorizepage/js/firebase.js"></script>
+
+	<!--PDF Parser Scripts-->
+	<script src=../../pdf/parser/FileSaver.min.js></script>
+    <script src=../../pdf/parser/spin.min.js></script>
+	<script src='../../pdf/parser/ladda.min.js'></script>
+
+	<!--Functionalities-->
+	<script>
+		$(function(){
+		document.getElementById("tableSection").style.display = "block";
+		setTimeout(function(){
+			$('body').addClass('loaded');
+		},2000);
+		
+		});
+	</script>
+	<script src="../employer-assets/js/accountSettings.js"></script>
+	<script src="../assets/js/functions/logout.js"></script>
+	<script src="../assets/js/functions/usertypehandler.js"></script>
+	<script src="../employer-assets/js/initial.js"></script>
+	<script src="../employer-assets/js/uploadlogo.js"></script>
+	<script src="../employer-assets/js/employercollapsibles.js"></script>
+	<script src="../employer-assets/js/employerjoblist.js"></script>
+	<script src="../employer-assets/js/postnewjob.js"></script>
+	<script src="../employer-assets/js/notificationManager.js"></script>
+	<script src="../assets/js/functions/statusManager.js"></script>
+
+	<!--Scroll Transition-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
+
+	<!--Crypto-Key-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

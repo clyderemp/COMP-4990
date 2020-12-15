@@ -1,0 +1,11 @@
+NATURALISTIC
+1) The study of living organisms with the environment is known as
+{Ecosystem,Environment,Community,Ecology} --> 3
+2) Which of the following parameters of light is NOT required by plants to grow?
+{Wavelength of light,Intensity of light,Duration of light,Color of light} --> 3
+3) The collection of the same species within an area is called a population.
+{True,False} --> 0
+4) Which of the following climatic zones lies around 40°- 60° latitude?
+{Tropical,Subtropical,Arctic,Temperate} --> 3
+5) Process used by plants and other organisms to convert light energy into chemical energy is called:
+{Mitochondria,Photosynthesis,Biosynthesis,Chemosynthesis} --> 1

@@ -1,0 +1,54 @@
+LINGUISTIC
+1) To be choleric is to be
+{Overweight,Bad-tempered,Pleasant,Sad} --> 1
+2) To be choleric is to be
+{Instant Reply,Meal,Factory,Close relationship} --> 1
+3) To incarcerate someone is to
+{Imprison them,Convict them,Accuse them,Acquit them} --> 0
+4) A languid movement is
+{Slow-moving,Speedy,Awkward,Reckless} --> 0
+5) It is important that you adhere to the curfew set by your parents. If you stay out too late, they may become worried and call the police.
+{Ignore,Tolerate,Withstand,Stick} --> 3
+6) After many vicissitudes of fortune, he at last sunk into abject poverty and hopeless misery.
+{Hardships,Fluctuations,Slump,Trials} --> 0
+7) FAIR
+{Impartial,Judgement,Just,Lawful} --> 2
+8) IMPEDE
+{Insult,Enrage,Hinder,Aid} --> 2
+9) GOAD
+{Urge on,Deny,Expel,Ridicule} --> 0
+10) FOIBLE
+{Stregnth,Mistake,Slight fault,Misunderstanding} --> 2
+11) ASK
+{Seek,Guess,Demand,Inquire} --> 3
+12) TURPITUDE
+{Pulchritude,Depravity,Defiance,Negligence} --> 1
+13) SAVAGE
+{Wild,Easygoing,Furious,Tame} --> 0
+14) PAINT : CANVAS
+{Brush: bucket,Peanut Butter: bread,Clock: time,Art: life} --> 1
+15) BEAGLE : DOG
+{Africa: continent,Meow: cat,Barnyard: farm,Picnic: basket} --> 0
+16) Since Tom had been working with people intensively all week, he craved a quiet weekend of ____________ to give himself a chance to read, rest, and relax.
+{Alone,Solitude,Congregation,Enterprise} --> 1
+17) The __________ remarks of the mayor elicited hisses from an audience who had hoped to hear more than empty platitudes.
+{Seditious,Factious,Vacuous,Eloquent} --> 0
+18) Mozart is considered a child ___________ since he was working on keyboard concertos when he was merely five years old.
+{Delinquent,Specialist,Expert,Prodigy} --> 3
+19) An unctuous attitude is
+{Insincere,Rebellious,Friendly,Straightforward} --> 2
+20) A fecund tree is
+{Bearing lots of fruit,Changing colors for fall,Bending in the wind,Dried out and dying} --> 0
+21) What is the study of language?
+{Phonetics,Syntax,Linguistics,Semantics} --> 2
+22) What is the study of the meaning of languages?
+{Phonetics,Syntax,Linguistics,Semantics} --> 3
+23) Which one is considered as linguistic communication?
+{Raising eyebrows,Posting a status on your facebook,Moving hands in different gestures,Clenching of fists} --> 1
+24) What is not true about language?
+{Correct spelling preserves a language,All languages reflect social and cultural aspects of a society,The same words in the same order don't always mean the same thing,It's easier to learn English if you are in the environment where English is used all the time} --> 0
+25) If you are studying rules of syntax, are you studying linguistic competence or linguistic performance
+{Linguistic competence,Linguisitic performance} --> 0
+
+
+

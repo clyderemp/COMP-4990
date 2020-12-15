@@ -1,0 +1,1328 @@
+{
+    "University of Windsor": {
+        "CMAF": {
+            "1010": {
+                "coursename": "Intro: Media and Society",
+                "difficulty": "none",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "none",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "none",
+                "days": "Online"
+            }
+        },
+        "COMP": {
+            "1000": {
+                "coursename": "Key Concepts in Comp-Sci",
+                "difficulty": "none",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "none",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "none",
+                "days": "Tuesday, Thursday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "1047": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Computer Concepts for End-Users",
+                "days": "Online"
+            },
+            "1400": {
+                "coursename": "Intro to Algorithms I",
+                "difficulty": "low",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "high",
+                "workload": "low",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "12:50"
+            },
+            "1410": {
+                "courseDesc": "",
+                "coursename": "Intro to Algorithms II",
+                "difficulty": "high",
+                "evaluation_style": "",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "application",
+                "previousAve": "",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "high",
+                "days": "Tuesday",
+                "endtime": "8:30",
+                "starttime": "11:20"
+            },
+            "2057": {
+                "coursename": "Intro to the Internet",
+                "difficulty": "low",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "high",
+                "workload": "low",
+                "days": "Online"
+            },
+            "2067": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Programming for Beginners",
+                "days": "Online"
+            },
+            "2077": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Problem Solving & Info: Internet",
+                "days": "Online"
+            },
+            "2097": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Social Media & Mobile Tech-End Users",
+                "days": "Online"
+            },
+            "2120": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Obj-Oriented Programming using Java",
+                "days": "Monday, Wednesday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "2310": {
+                "courseDesc": "",
+                "coursename": "Theoretical Foundations",
+                "difficulty": "med",
+                "evaluation_style": "",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "project",
+                "previousAve": "",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "high",
+                "days": "Tuesday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "2540": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Data Structures and Algorithms",
+                "days": "Monday, Wednesday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "2560": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Systems Programming",
+                "days": "Online"
+            },
+            "2650": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Computer Architecture I: Digital Design",
+                "days": "Tuesday, Thursday",
+                "endtime": "4:00",
+                "starttime": "5:20"
+            },
+            "2707": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Advanced Website Design",
+                "days": "Online"
+            },
+            "2980": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Co-op Work Term I",
+                "days": "Online"
+            },
+            "3057": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Cyber-Ethics",
+                "days": "Online"
+            },
+            "3220": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Object-Oriented Software Analysis & Design",
+                "days": "Tuesday, Thursday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "3300": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Operating Systems Fundamentals",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3340": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "World Wide Web Info System Development",
+                "days": "Wednesday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "3670": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Computer Networks",
+                "days": "Tuesday, Thursday",
+                "endtime": "2:30",
+                "starttime": "3:50"
+            },
+            "3980": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Co-op Work Term II",
+                "days": "Online"
+            },
+            "4970": {
+                "Difficulty": "Easy",
+                "Learning-Style": "Application",
+                "Workload": "Medium",
+                "coursename": "Co-op Work Term III",
+                "days": "Online"
+            },
+            "4980": {
+                "coursename": "Co-op Work Term IV",
+                "difficulty": "low",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "high",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "low",
+                "days": "Online"
+            },
+            "4960A": {
+                "coursename": "Research Project - Part 1",
+                "difficulty": "low",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "high",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "low",
+                "days": "Online"
+            },
+            "4960B": {
+                "coursename": "Research Project - Part 2",
+                "difficulty": "low",
+                "instructor": "Clyde Rempillo",
+                "learning_style": "high",
+                "profEmail": "rempillj@uwindsor.ca",
+                "workload": "low",
+                "days": "Online"
+            }
+        },
+        "GART": {
+            "1500": {
+                "coursename": "Effective Writing I",
+                "days": "Online"
+            },
+            "1510": {
+                "coursename": "Effective Writing II",
+                "days": "Online"
+            },
+            "3100": {
+                "coursename": "Ways of Doing -Special Topics",
+                "days": "Online"
+            }
+        },
+        "SJST": {
+            "1400": {
+                "coursename": "Queer Activism",
+                "days": "Online"
+            }
+        },
+        "SOSC": {
+            "2500": {
+                "coursename": "Basic Quantitative Methods",
+                "days": "Online"
+            },
+            "3100": {
+                "coursename": "Ways of Doing -Special Topics",
+                "days": "Online"
+            }
+        },
+        "MACS": {
+            "2450": {
+                "coursename": "Modern Art",
+                "days": "Online"
+            }
+        },
+        "VSAR": {
+            "1080": {
+                "coursename": "Studio Pract &Ideas/Time Based",
+                "days": "Teusday, Thursday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "3650": {
+                "coursename": "Independent Studio",
+                "days": "Online"
+            },
+            "3800": {
+                "coursename": "Visual Arts Internship",
+                "days": "Online"
+            },
+            "3850": {
+                "coursename": "Green Corridor",
+                "days": "Wednesday",
+                "endtime": "11:30",
+                "starttime": "2:20"
+            }
+        },
+        "DRAM": {
+            "2100": {
+                "coursename": "Speech Commuication to Inform",
+                "days": "Online"
+            },
+            "2720": {
+                "coursename": "The Creative Process",
+                "days": "Online"
+            },
+            "3510": {
+                "coursename": "Production Problems",
+                "days": "Online"
+            },
+            "3520": {
+                "coursename": "Production Problems",
+                "days": "Online"
+            },
+            "3980": {
+                "coursename": "Internship I: Arts Mgmt Cert",
+                "days": "Online"
+            },
+            "3990": {
+                "coursename": "Internship II: Arts Mgmt Cert",
+                "days": "Online"
+            },
+            "4000": {
+                "coursename": "Style in Theatre",
+                "days": "Online"
+            }
+        },
+        "ENGL": {
+            "1001": {
+                "coursename": "Composition",
+                "days": "Online"
+            },
+            "2530": {
+                "coursename": "Shakespear in Performance",
+                "days": "Online"
+            }
+        },
+        "HIST": {
+            "2510": {
+                "coursename": "Hist/Women's Mvts in N Amer",
+                "days": "Online"
+            },
+            "2720": {
+                "coursename": "Modern Latin America",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "12:50"
+            },
+            "2970": {
+                "coursename": "Documentary Film",
+                "days": "Teusday, Thursday",
+                "endtime": "2:30",
+                "starttime": "5:20"
+            },
+            "4970": {
+                "coursename": "Arab and Muslim Presence in Mi",
+                "days": "Online"
+            }
+        },
+        "FREN": {
+            "4900": {
+                "coursename": "Advanced Cultural Studies",
+                "days": "Online"
+            }
+        },
+        "GREK": {
+            "2100": {
+                "coursename": "Intermediate Greek",
+                "days": "Online"
+            }
+        },
+        "PHIL": {
+            "1290": {
+                "coursename": "Contemporary Moral Issues",
+                "days": "Online"
+            },
+            "1600": {
+                "coursename": "Reasoning Skills",
+                "days": "Teusday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "2210": {
+                "coursename": "introduction to Ethics",
+                "days": "Online"
+            },
+            "2250": {
+                "coursename": "Ethic of Life/Death/Healthcare",
+                "days": "Online"
+            }
+        },
+        "POLS": {
+            "2320": {
+                "coursename": "Government &Politics of the US",
+                "days": "Online"
+            },
+            "2680": {
+                "coursename": "International Organizations",
+                "days": "Online"
+            },
+            "3230": {
+                "coursename": "Government and Business",
+                "days": "Online"
+            }
+        },
+        "PSYC": {
+            "1150": {
+                "coursename": "Intro: Psyc / Behavioural Scie",
+                "days": "Online"
+            },
+            "1160": {
+                "coursename": "Intro: Psyc / Social Scie",
+                "days": "Online"
+            },
+            "2230": {
+                "coursename": "Devl Psychology: The Child",
+                "days": "Online"
+            },
+            "2240": {
+                "coursename": "Devl Psychology: The Adoloscence",
+                "days": "Monday, Wednesday",
+                "endtime": "11:30",
+                "starttime": "2:20"
+            },
+            "2280": {
+                "coursename": "Abnormal Psychology",
+                "days": "Online"
+            },
+            "2360": {
+                "coursename": "Intro to Social Psychology",
+                "days": "Online"
+            },
+            "3100": {
+                "coursename": "Mental Health and Accessibility",
+                "days": "Online"
+            },
+            "3300": {
+                "coursename": "Intro to Clinical Psychology",
+                "days": "Monday, Wednesday",
+                "endtime": "4:00",
+                "starttime": "6:50"
+            },
+            "3390": {
+                "coursename": "Health Psychology",
+                "days": "Online"
+            }
+        },
+        "SWRK": {
+            "2000": {
+                "coursename": "Statistics for Social Workers",
+                "days": "Online"
+            }
+        },
+        "SACR": {
+            "2620": {
+                "coursename": "Intro to Criminal Justice",
+                "days": "Teusday, Thursday",
+                "endtime": "4:00",
+                "starttime": "6:50"
+            },
+            "3080": {
+                "coursename": "Intermediate Statistics",
+                "days": "Monday, Wednesday",
+                "endtime": "1:00",
+                "starttime": "2:50"
+            },
+            "3630": {
+                "coursename": "Penology",
+                "days": "Teusday, Thursday",
+                "endtime": "4:00",
+                "starttime": "6:50"
+            }
+        },
+        "WGST": {
+            "1200": {
+                "coursename": "Gal Pals: Women and Friendship",
+                "days": "Online"
+            },
+            "1400": {
+                "coursename": "Queer Activism",
+                "days": "Online"
+            },
+            "2510": {
+                "coursename": "Women's Movements in N America",
+                "days": "Online"
+            }
+        },
+        "CIVL": {
+            "3610": {
+                "coursename": "Masonry and Concrete Design",
+                "days": "Teusday, Thursday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "3620": {
+                "coursename": "Finite Element-Analysis&Design",
+                "days": "Teusday, Thursday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "3630": {
+                "coursename": "Geotechnical Engineering II",
+                "days": "Monday, Wednesday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "3640": {
+                "coursename": "Structural Steel Design",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3650": {
+                "coursename": "Transportation & Traffic Engg",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4000B": {
+                "coursename": "Capstone Design Project",
+                "days": "Friday",
+                "endtime": "8:30",
+                "starttime": "10:20"
+            },
+            "4810": {
+                "coursename": "Highway Design & Construction",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4820": {
+                "coursename": "Planning Construction Mgmt",
+                "days": "Teusday, Thursday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "4910": {
+                "coursename": "Foundation Engineering",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4920": {
+                "coursename": "Adv Topics: Structural Design",
+                "days": "Teusday, Thursday",
+                "endtime": "4:00",
+                "starttime": "5:20"
+            },
+            "4940": {
+                "coursename": "Transport Systems Analysis",
+                "days": "Teusday, Thursday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            }
+        },
+        "ENVE": {
+            "4000B": {
+                "coursename": "Capstone Design Project",
+                "days": "Friday",
+                "endtime": "8:30",
+                "starttime": "10:20"
+            },
+            "4810": {
+                "coursename": "Sustainabiity in Engineering",
+                "days": "Monday, Wednesday, Friday",
+                "endtime": "11:30",
+                "starttime": "12:20"
+            },
+            "4820": {
+                "coursename": "Hydrogeological Engineering",
+                "days": "Teusday, Thursday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            }
+        },
+        "ELEC": {
+            "2250": {
+                "coursename": "Physical Electronics",
+                "days": "Teusday, Friday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "3240": {
+                "coursename": "Control Systems",
+                "days": "Monday, Wednesday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "3270": {
+                "coursename": "Microprocessors",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3290": {
+                "coursename": "Analog Communications",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4000B": {
+                "coursename": "Capstone Design Project",
+                "days": "Friday",
+                "endtime": "10:00",
+                "starttime": "12:50"
+            },
+            "4320": {
+                "coursename": "EM Waves and Radiating Systems",
+                "days": "Teusday, Thursday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "4330": {
+                "coursename": "Digl Integrated Circuit Desgn",
+                "days": "Monday, Wednesday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "4350": {
+                "coursename": "Microelectromechanical Systems",
+                "days": "Teusday, Friday",
+                "endtime": "4:00",
+                "starttime": "5:20"
+            },
+            "4390": {
+                "coursename": "Multimedia Systems",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4400": {
+                "coursename": "Wireless Communications",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4470": {
+                "coursename": "Computer Networks Security",
+                "days": "Monday, Wednesday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "4480": {
+                "coursename": "Digital Computer Architecture",
+                "days": "Teusday, Thursday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "4490": {
+                "coursename": "Sensor and Vision Systems",
+                "days": "Saturday",
+                "endtime": "9:00",
+                "starttime": "11:50"
+            },
+            "4600": {
+                "coursename": "Power Systems II",
+                "days": "Thursday",
+                "endtime": "4:00",
+                "starttime": "6:50"
+            }
+        },
+        "GENG": {
+            "1190": {
+                "coursename": "Technical Communications",
+                "days": "Teusday, Thursday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "1200": {
+                "coursename": "Engineering Thermofluids",
+                "days": "Teusday, Thursday",
+                "endtime": "5:30",
+                "starttime": "6:50"
+            },
+            "2180": {
+                "coursename": "Mechanics of Deformable Bodies",
+                "days": "Teusday, Thursday",
+                "endtime": "2:30",
+                "starttime": "3:50"
+            },
+            "2500": {
+                "coursename": "Engineering & the Environment",
+                "days": "Teusday",
+                "endtime": "1:00",
+                "starttime": "3:50"
+            },
+            "2980": {
+                "coursename": "Work Term I",
+                "days": "Online"
+            },
+            "3400": {
+                "coursename": "Mechatronic Sys Design & Prjct",
+                "days": "Thursday",
+                "endtime": "5:30",
+                "starttime": "8:30"
+            },
+            "3980": {
+                "coursename": "Work Term II",
+                "days": "Online"
+            },
+            "4210": {
+                "coursename": "Engineering & Society",
+                "days": "Teusday, Thursday",
+                "endtime": "2:30",
+                "starttime": "3:50"
+            },
+            "4400": {
+                "coursename": "Energy Conversion Systems",
+                "days": "Friday",
+                "endtime": "5:30",
+                "starttime": "8:30"
+            },
+            "4980": {
+                "coursename": "Work Term III",
+                "days": "Online"
+            }
+        },
+        "MECH": {
+            "3215": {
+                "coursename": "Mechanical Vibratinons",
+                "days": "Monday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "3217": {
+                "coursename": "Applied Thermodynamics",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3220": {
+                "coursename": "Fluid Mechanics II",
+                "days": "Monday, Wednesday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "3221": {
+                "coursename": "Control Theory",
+                "days": "Teusday, Thursday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "3224": {
+                "coursename": "Engineering Measurements",
+                "days": "Teusday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3228": {
+                "coursename": "Heat Transfer",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3670": {
+                "coursename": "Aerospace Engg Fundamentals",
+                "days": "Monday, Wednesday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "4200B": {
+                "coursename": "Capstone Design",
+                "days": "Friday",
+                "endtime": "8:30",
+                "starttime": "10:20"
+            },
+            "4212": {
+                "coursename": "Mechatronics",
+                "days": "Saturday",
+                "endtime": "1:00",
+                "starttime": "3:50"
+            },
+            "4221": {
+                "coursename": "Machine Design",
+                "days": "Teusday, Thursday",
+                "endtime": "4:00",
+                "starttime": "5:20"
+            },
+            "4228": {
+                "coursename": "Sustainability in Engineering",
+                "days": "Monday, Wednesday, Friday",
+                "endtime": "11:30",
+                "starttime": "12:20"
+            },
+            "4241": {
+                "coursename": "Computer Aided Engineering",
+                "days": "Teusday, Thursday",
+                "endtime": "8:30",
+                "starttime": "9:20"
+            },
+            "4255": {
+                "coursename": "Envl Effects/Control of Noise",
+                "days": "Monday, Wednesday",
+                "endtime": "2:30",
+                "starttime": "3:50"
+            },
+            "4467": {
+                "coursename": "Vehicle Thermal Managemet",
+                "days": "Monday, Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4469": {
+                "coursename": "Diesel Engine Fundamentals",
+                "days": "Monday , Wednesday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "4670": {
+                "coursename": "Aerospace Propulsion",
+                "days": "Monday , Wednesday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "4672": {
+                "coursename": "Flight Dynamics&Ctrl-Unman Veh",
+                "days": "Monday , Wednesday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4820": {
+                "coursename": "Ceramic Materials",
+                "days": "Online"
+            },
+            "4832": {
+                "coursename": "Modern Steels",
+                "days": "Teusday , Thursday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            }
+        },
+        "KINE": {
+            "2100": {
+                "coursename": "Human Performance",
+                "days": "Online"
+            },
+            "2300": {
+                "coursename": "Soci Sport & Physical Activity",
+                "days": "Monday, Tuesday, Wednesday, Thursday",
+                "endtime": "8:30",
+                "starttime": "9:50"
+            },
+            "2850": {
+                "coursename": "Human growth and development",
+                "days": "Monday, Tuesday, Wednesday, Thursday",
+                "endtime": "12:00",
+                "starttime": "1:20"
+            },
+            "2990": {
+                "coursename": "Co-op Work Experience I",
+                "days": "Online"
+            },
+            "3500": {
+                "coursename": "Organizational Behaviour",
+                "days": "Online"
+            },
+            "3990": {
+                "coursename": "Co-op Work Experience II",
+                "days": "Online"
+            },
+            "4750": {
+                "coursename": "Individual Studies",
+                "days": "Online"
+            },
+            "4900": {
+                "coursename": "Adv. Health and Wellness",
+                "days": "Monday, Tuesday, Wednesday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "4980": {
+                "coursename": "Internship",
+                "days": "Online"
+            },
+            "4990": {
+                "coursename": "Co-op Work Experience III",
+                "days": "Online"
+            }
+        },
+        "NURS": {
+            "2782": {
+                "coursename": "Clinical Nursing Experience",
+                "days": "Online"
+            },
+            "2902": {
+                "coursename": "Indiv Clinical Nursing Exp",
+                "days": "Online"
+            },
+            "3510": {
+                "coursename": "The Human Meaning of Death",
+                "days": "Monday, Wednesday",
+                "endtime": "11:30",
+                "starttime": "2:20"
+            },
+            "3730": {
+                "coursename": "Nurs Care-Complex Hlth Probs I",
+                "days": "Monday, Wednesday",
+                "endtime": "8:30",
+                "starttime": "11:30"
+            },
+            "3782": {
+                "coursename": "Clinical Nursing Experience",
+                "days": "Online"
+            },
+            "3902": {
+                "coursename": "Indiv Clinical Nursing Exp",
+                "days": "Online"
+            },
+            "3910": {
+                "coursename": "Basic Human Nutrition",
+                "days": "Online"
+            }
+        },
+        "BIOL": {
+            "2100": {
+                "coursename": "Human Physiology I",
+                "days": "Online"
+            }
+        },
+        "BIOC": {
+            "2010": {
+                "coursename": "Organic Chem of Biomolecules",
+                "days": "Tuesday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "2015": {
+                "coursename": "Organic Chem of Biomolecules",
+                "days": "Tuesday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "3130": {
+                "coursename": "Protein&Nucleic Acid Chemistry",
+                "days": "Online"
+            }
+        },
+        "CHEM": {
+            "1103": {
+                "coursename": "Topics in General Chemistry",
+                "days": "Tuesday, Thursday",
+                "endtime": "10:00",
+                "starttime": "12:50"
+            },
+            "3909": {
+                "coursename": "Internship Work Term I",
+                "days": "Online"
+            },
+            "4320": {
+                "coursename": "Dyes&Pigments/Des, Synth, Prop.",
+                "days": "Online"
+            },
+            "4350": {
+                "coursename": "Advanced Organic Chemistry",
+                "days": "Tuesday, Wednesday, Thursday",
+                "endtime": "2:00",
+                "starttime": "4:00"
+            },
+            "4510": {
+                "coursename": "Spcl Topics: Inorg Chem",
+                "days": "Online"
+            },
+            "4908": {
+                "coursename": "Internship Work Term II",
+                "days": "Online"
+            }
+        },
+        "ECON": {
+            "1100": {
+                "coursename": "Introduction to Economics I",
+                "days": "Online"
+            },
+            "1110": {
+                "coursename": "Introduction to Economics II",
+                "days": "Online"
+            }
+        },
+        "FRSC": {
+            "1107": {
+                "coursename": "Intro Crime Scene Investig",
+                "days": "Online"
+            }
+        },
+        "MATH": {
+            "1020": {
+                "coursename": "Mathematical Foundations",
+                "days": "Monday, Wednesday",
+                "endtime": "2:30",
+                "starttime": "4:20"
+            },
+            "1250": {
+                "coursename": "Linear Algebra I",
+                "days": "Monday, Wednesday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "1730": {
+                "coursename": "Integral Calculus",
+                "days": "Tuesday, Thursday",
+                "endtime": "2:30",
+                "starttime": "3:50"
+            },
+            "1980": {
+                "coursename": "Mathematics for Business",
+                "days": "Online"
+            },
+            "2780": {
+                "coursename": "Vector Calculus",
+                "days": "Tuesday, Thursday",
+                "endtime": "10:00",
+                "starttime": "11:20"
+            },
+            "2790": {
+                "coursename": "Differential Equations",
+                "days": "Tuesday, Thursday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "4000": {
+                "coursename": "Lie Algebra/Representation Th",
+                "days": "Online"
+            }
+        },
+        "STAT": {
+            "2910": {
+                "coursename": "Statisitics for the Sciences",
+                "days": "Tuesday, Thursday",
+                "endtime": "1:00",
+                "starttime": "2:20"
+            },
+            "4200": {
+                "coursename": "Actuarial Regression and Time",
+                "days": "Wednesday",
+                "endtime": "10:00",
+                "starttime": "12:50"
+            }
+        },
+        "PHYS": {
+            "1000": {
+                "coursename": "Introduction to Astronomy I",
+                "days": "Online"
+            },
+            "2980": {
+                "coursename": "Co-op Work Term I",
+                "days": "Online"
+            },
+            "3980": {
+                "coursename": "Co-op Work Term II",
+                "days": "Online"
+            },
+            "4980": {
+                "coursename": "Co-op Work Term III",
+                "days": "Online"
+            }
+        },
+        "ESCI": {
+            "1000": {
+                "coursename": "Natural Hazards and Disasters",
+                "days": "Online"
+            },
+            "1020": {
+                "coursename": "Intro to Planetary Science",
+                "days": "Online"
+            },
+            "1100": {
+                "coursename": "Intro to Environmental Science",
+                "days": "Online"
+            },
+            "1130": {
+                "coursename": "Atmosphere and Climate",
+                "days": "Online"
+            },
+            "2000": {
+                "coursename": "Science, Technology & Society",
+                "days": "Online"
+            },
+            "2010": {
+                "coursename": "Geology and the Environment",
+                "days": "Online"
+            },
+            "3755": {
+                "coursename": "Meth./Great Lakes Geomicrobiol",
+                "days": "Monday, Tuesday, Wednesday, Thursday, Friday",
+                "endtime": "8:30",
+                "starttime": "4:30"
+            },
+            "4900B": {
+                "coursename": "Thesis Research in Environ Sci",
+                "days": "Online"
+            }
+        },
+        "ESTU": {
+            "4910": {
+                "coursename": "Environ Res/Leadership Exp",
+                "days": "Online"
+            }
+        },
+        "ACCT": {
+            "1510": {
+                "coursename": "Principles of Financial Acctg",
+                "days": "Online"
+            },
+            "2510": {
+                "coursename": "Intro: Financial Acctg Theory",
+                "days": "Online"
+            },
+            "2520": {
+                "coursename": "Accounting Theory I",
+                "days": "Online"
+            },
+            "2550": {
+                "coursename": "Principles of Managerial Acctg",
+                "days": "Online"
+            },
+            "3520": {
+                "coursename": "Accounting Theory II",
+                "days": "Tuesday, Thursday",
+                "endtime": "5:30",
+                "starttime": "6:50"
+            },
+            "3560": {
+                "coursename": "Adv Mmgt Accounting & Analysis",
+                "days": "Online"
+            },
+            "3580": {
+                "coursename": "Accounting Information Systems",
+                "days": "Online"
+            },
+            "3600": {
+                "coursename": "Auditing I",
+                "days": "Online"
+            },
+            "3610": {
+                "coursename": "Taxation I",
+                "days": "Tuesday, Thursday",
+                "endtime": "7:00",
+                "starttime": "8:20"
+            },
+            "4570": {
+                "coursename": "Advanced Accounting I",
+                "days": "Tuesday, Thursday",
+                "endtime": "4:00",
+                "starttime": "5:20"
+            },
+            "4590": {
+                "coursename": "Adv Topics: Managerial Acctg",
+                "days": "Monday, Wednesday",
+                "endtime": "4:00",
+                "starttime": "6:50"
+            },
+            "4600": {
+                "coursename": "Auditing II",
+                "days": "Online"
+            },
+            "4610": {
+                "coursename": "Taxation II",
+                "days": "Wednesday, Thursday",
+                "endtime": "7:00",
+                "starttime": "8:20"
+            }
+        },
+        "BUSR": {
+            "4950": {
+                "coursename": "Organizational Behaviour",
+                "days": "Online"
+            }
+        },
+        "FINA": {
+            "2700": {
+                "coursename": "Business Finance I",
+                "days": "Online"
+            },
+            "2710": {
+                "coursename": "Business Finance II",
+                "days": "Online"
+            },
+            "3700": {
+                "coursename": "Intermediate Finance",
+                "days": "Online"
+            },
+            "3730": {
+                "coursename": "Working Capital Management",
+                "days": "Thursday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "3780": {
+                "coursename": "Financial Market&Institutions",
+                "days": "Online"
+            },
+            "4740": {
+                "coursename": "Corporate Financial Strategy",
+                "days": "Online"
+            }
+        },
+        "MGMT": {
+            "1000": {
+                "coursename": "Business Communications",
+                "days": "Monday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "2400": {
+                "coursename": "Mgmt and Organizational Life",
+                "days": "Online"
+            },
+            "2430": {
+                "coursename": "Human Resources Management",
+                "days": "Thursday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "3000": {
+                "coursename": "Bus Ethics in a Global Context",
+                "days": "Monday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "4410": {
+                "coursename": "Training and Development",
+                "days": "Wednesday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "4910": {
+                "coursename": "Coaching",
+                "days": "Online"
+            }
+        },
+        "MKTG": {
+            "1310": {
+                "coursename": "Principles of Marketing",
+                "days": "Tuesday, Thursday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "2320": {
+                "coursename": "Mktg Problems-AppsIns & Decisns",
+                "days": "Online"
+            },
+            "4360": {
+                "coursename": "Advertising Management",
+                "days": "Tuesday, Thursday",
+                "endtime": "4:00",
+                "starttime": "6:50"
+            },
+            "4950": {
+                "coursename": "Community-Based Marketing",
+                "days": "Online"
+            },
+            "4960": {
+                "coursename": "Marketing Tactics",
+                "days": "Online"
+            }
+        },
+        "MSCI": {
+            "1000": {
+                "coursename": "Intro - Business Data Analysis",
+                "days": "Wednesday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "2020": {
+                "coursename": "Business Data Analysis",
+                "days": "Monday, Wednesday",
+                "endtime": "4:00",
+                "starttime": "5:20"
+            },
+            "2130": {
+                "coursename": "Intro to Mgmt Info Systems",
+                "days": "Online"
+            },
+            "2200": {
+                "coursename": "Quantitative Decision Models I",
+                "days": "Tuesday, Thursday",
+                "endtime": "5:30",
+                "starttime": "6:50"
+            },
+            "3310": {
+                "coursename": "Operations Management I",
+                "days": "Tuesday, Thursday",
+                "endtime": "11:30",
+                "starttime": "12:50"
+            },
+            "4950": {
+                "coursename": "Information Systems and COVID-",
+                "days": "Online"
+            },
+            "4960": {
+                "coursename": "Data Analytics enabled Busines",
+                "days": "Online"
+            }
+        },
+        "STEN": {
+            "1000": {
+                "coursename": "Introduction to Business",
+                "days": "Tuesday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            },
+            "2050": {
+                "coursename": "B. Comm Co-op Work Term I",
+                "days": "Online"
+            },
+            "2900": {
+                "coursename": "Fundamentals of Entrepreneur",
+                "days": "Online"
+            },
+            "3050": {
+                "coursename": "B. Comm Co-op Work Term II",
+                "days": "Online"
+            },
+            "3930": {
+                "coursename": "International Business",
+                "days": "Online"
+            },
+            "3970": {
+                "coursename": "Law and Business Administration",
+                "days": "Monday, Wednesday",
+                "endtime": "5:30",
+                "starttime": "6:50"
+            },
+            "4050": {
+                "coursename": "B. Comm Co-op Work Term III",
+                "days": "Online"
+            },
+            "4980": {
+                "coursename": "Strategic Management",
+                "days": "Thursday",
+                "endtime": "7:00",
+                "starttime": "9:50"
+            }
+        }
+    }
+}

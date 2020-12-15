@@ -1,0 +1,19 @@
+{ 
+  
+  "postsecondary" : {
+    "courses":{
+      "COMP":{
+
+      },
+      "CMAF":{
+
+      }
+    }
+
+
+},
+  "highschool":{},
+  "gradeschool" :{},
+  "preschool" :{},
+
+}

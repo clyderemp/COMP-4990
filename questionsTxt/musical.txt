@@ -1,0 +1,11 @@
+MUSICAL
+1) The study of music is called:
+{Instrumentology,Musicology,Bassology,Octavology} --> 1
+2) What are chords?
+{A set of keys on a piano.,A set of strings on a guitar.,A set of notes as a basis of a harmony.,The black keys on a piano.} --> 2
+3) What is a staff?
+{A stand used to hold up instruments.,A part of a saxophone.,The item used by a conductor.,The lines and spaces where music notes are written.} --> 3
+4) The real name of middle C is?
+{C2,C3,C4,C5} --> 2
+5) The speed at which music is played is called?
+{Tempo,Rythme,Beat,Pace} --> 0

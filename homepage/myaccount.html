@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MyAccount - Home</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="../assets/img/logo2.jpg" width=100% height=100%>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <link rel="stylesheet" href="css/transcriptStyle.css">
+        <link rel="stylesheet" href="css/servicesStyle.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+
+
+    </head>
+
+<body>
+    <div class=sequence>
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+    
+        </div>
+    </div>
+
+        <nav>
+          <div class="logo">
+              <img src="../assets/img/logo1.png" alt="Moon Light">
+          </div>
+          <div class="mini-logo">
+              <img src="../assets/img/logo2.JPG" width="90px" height="90px" alt="">
+          </div>
+          <ul>
+            <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
+            <li><a href="#2"><i class="fa fa-user-circle-o"></i> <em>myAccount</em></a></li>
+            <li><a href="#3"><i class="fa fa-envelope-o"></i> <em>MySocial</em></a></li>
+            <li><a href="#4"><i class="fa fa-university"></i> <em>Services</em></a></li>
+            <li><a href="#5"><i class="fa fa-wrench"></i> <em>Settings</em></a></li>
+            <li><a onclick=logout()><i class="fa fa-sign-out"></i> <em>Logout</em></a></li>
+            
+          </ul>
+        </nav>
+        
+        <div class="slides">
+          <div class="slide" id="1">
+            <div class="content first-content">
+              <div class="container-fluid">
+                  <div class="col-md-3">
+                      <div class="user-image"><img src="../assets/img/MyAccount/myaccount1.png" alt=""></div>
+                  </div>
+                  <div class="col-md-9">
+                      <h2 class=studentname></h2>
+                      <p><em class="level"></em><br><p class="school"></p></p>
+                      <div class="main-btn"><a href="#2">Go to My Profile</a></div>
+                      <div class="main-btn"><a href="#2">Messages</a></div>
+                      <div class="main-btn"><a href="#3">More MyAcAdvisor info</a></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!--MYPROFILE-->
+          <div class="slide" id="2">
+            <div class="content myprofile-content">
+              <div class="container-fluid">
+                      <h2 class=studentname></h2><br>
+                      <div class="main-btn"><a href="#5">MyProfile Settings</a></div>
+                      <div class="secondary-btn"><a>MyPortfolio</a></div>
+                      <div class="collapsible"><a href="../pdf/parser/index.html">Update Transcript</a></div><br><br>
+                      <!--this is for the upload panel-->
+                      <!--<div class="uploadcontent">
+                            <br>
+                            <label>upload my transcript.pdf
+                                <input type=file value="upload" id="upload-btn"/>
+                            </label>
+                            <progress class="progressbar" value="0" max="100" id="uploadValue"></progress>
+                            <p id="uploadResult" style="text-align: center;"></p>
+                        </div><br><br>   -->
+                      
+
+                        <!--
+                            THIS IS THE MYPROFILE INFO PANEL
+                            THIS SHOWS THE STUDENTS INFORMATION
+
+                            CHECK MYPROFILE.JS FOR THE SCRIPTING
+                        -->
+                        <div class="myintel-div">
+                            <button id="myintelbutton" type="button" class="othercollapsible">MyProfile Info</button>
+                        </div>
+                                <div id="othercontent" class="myintel-div">
+                                        <div>
+                                            <p><em class="school">Current School:  </em></p>
+                                            <p id="email">Email Address: </p>
+                                            <p id="idnum">Student Number: </p>
+                                            <p id="oen">OEN:</p>
+                                            <p class="level">Logged in as: </p>
+                                            <p id="addinfo">Additional Info</p>
+                                        </div>
+                                </div>
+
+                        <!--
+                            THIS IS THE PROGRESS REPORT OF THE STUDENTS
+                            INCLUDES MAJOR, CUMULATIVE AVERAGE, TOTAL CREDITS AND COURSES
+                        -->        
+                        <div class="myintel-div">
+                            <button id="myprogressbutton" type="button" class="othercollapsible">MyTranscript Report</button>
+                        </div>
+                            <div id="progresscontent">
+                                <div>
+
+                                    CUMULATIVE AVERAGE: <p id="cumulative"></p>
+                                    MAJOR AVERAGE: <p id="major"></p>
+                                    <p id="credits"></p>
+                                </div>
+
+                                <div class="myintel-div">
+                                    <button id="sembtn" type="button" class="othercollapsible">Semester Report</button>
+                                </div>
+                                <div id="semestercontent">
+                                    <table class = "sem-table">
+                                    </table>
+                                </div>
+                                
+                                <div>
+                                    <img src="../assets/img/logo2.JPG">
+                                </div>
+                            </div>
+                        
+                        <div class="myintel-div">
+                            <button id="calcmyaverage-btn" type="button" class="othercollapsible">Calculate myGoalAverage</button>
+                        </div>
+                        <div id="calcmyaverage-content">
+                            <div class = calcInputform>
+                                    Current Total of Courses Completed: <p id="totalCourses-calc"></p>
+                                    Current Cumulative Average: <p id="cumulative-calc"></p>
+                                    Current Major AVERAGE: <p id="major-calc"></p>
+
+                                    Enter the number of courses this upcoming semester: 
+                                <input class=calcInput type="number" id="registeredCourses" value="1" placeholder="n"><br><br>
+                                  Enter your goal average for Cumulative: 
+                                <input class=calcInput type="number" id="goalCumulative" value="" placeholder="%"><br><br>
+                                Enter your goal average for Major %: 
+                                <input class=calcInput type="number" id="goalMajor" value="" placeholder="%"> 
+                                    <p id="calcResults"></p>
+                            </div>
+                        </div>
+
+
+                     <!--student info stuff down here-->
+                      <div class="col-md-6">
+                        <div><br><br>
+                            
+                            <div class="main-btn"><a href="#1">Back to Homepage</a></div>
+                          
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--MYPROFILE ENDS-->
+
+          <!--MYSOCIAL STARTS-->
+          <div class="slide" id="3">
+            <div class="content second-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div class="left-content">
+                            <h2>About Us</h2>
+                            <p>Please tell your friends about templatemo website. A variety of free CSS templates are available for immediate downloads.</p> 
+                            <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. <a href="#">Curabitur</a> a interdum diam. Nulla vestibulum porttitor porta.</p>
+                            <p>Nulla vitae interdum libero, vel posuere ipsum. Phasellus interdum est et dapibus tempus. Vestibulum malesuada lorem condimentum mauris ornare dapibus. Curabitur tempor ligula et <a href="#">placerat</a> molestie.</p>
+                            <p>Aliquam efficitur eu purus in interdum. <a href="#">Etiam tincidunt</a> magna ex, sit amet lobortis felis bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                          <div class="main-btn"><a href="#3">Read More</a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-image">
+                          <img src="img/about_image.jpg" alt="">
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="4">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="../assets/img/Academic Advising/AA1.png" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/Academic Advising/AA2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/Academic Advising/AA1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="img/second_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/Find MyCareer/Career2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/Find MyCareer/Career1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="img/third_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyCampus Events/MyCampus Events2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyCampus Events/MyCampus Events1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="../assets/img/Academic Advising/AA1.png" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyJob Search/MyJob Search2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyJob Search/MyJob Search1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="../assets/img/Academic Advising/AA1.png" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyStudentBenefits/MyStudentBenefits2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyStudentBenefits/MyStudentBenefits1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="/homepage/myaccount.html"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyAccount/myaccount2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyAccount/myaccount1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="img/fourth_big_item.jpg" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyCampus/MyCampus2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyCampus/MyCampus1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a onclick=openServiceSite("mycourseplanner") href="#" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyCoursePlanner/MyCoursePlanner2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyCoursePlanner/MyCoursePlanner1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="../assets/img/Academic Advising/AA1.png" data-lightbox="image-1"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <img src="../assets/img/MyIntel Calculator/intelligence2.png">
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="../assets/img/MyIntel Calculator/intelligence1.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+          <div class="slide" id="5">
+            <div class="content fourth-content">
+                <div class="container-fluid">
+                    <h2 id=settings>SETTINGS</h2><br>
+                        <div class="myintel-div">
+                            <button id="changepassBtn" type="button" class="othercollapsible">Change my password</button>
+                        </div>
+                        <div id="changePassForm">
+                            <p id=settingsContent>Change Password</p>
+                            <input id=pass1 class="newpass" type="text" placeholder="New password...">
+                            <input id=pass2 class="newpass" type="text" placeholder="Confirm new password..."><br>
+                            <p id=error></p><br>
+                            <input id=confirmBtn class="newpassBtn" type="button" value="Confirm Changes" disabled>
+                        </div>
+                        <div class="myintel-div">
+                            <button id="deleteAccBtn" type="button" class="othercollapsible">Delete my Account</button>
+                        </div>
+                        <div id="deleteAccForm">
+                            <div  id="loginAs" value="student"></div>
+                            <p id=settingsContent>Are you sure you would like to delete your account?</p>
+                            <input id=yesDelete class="deleteBtn" type="button" value="Yes I'm Sure!">
+                            <input id=noDelete class="deleteBtn" type="button" value="No, I've changed my mind">
+                            <p id=deleteMessage></p>
+                            <input id=confirm class="deleteBtn" type="button" value="Finalize" style="visibility: hidden;">
+                            <progress class="progressbar" value="0" max="100" id="uploadValue"></progress>
+                            <p id="uploadResult" style="text-align: center;"></p>
+                        </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="6">
+            <div class="content fifth-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="content">
+              <p>Copyright &copy; 2020 MyAcAdvisor</p>
+          </div>
+        </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="../authorizepage/js/firebase.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigator.js"></script>
+    <script src="js/checkstatus.js"></script>
+    <script src="js/myprofile.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/calcmyaverage.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/services.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    
+</body>
+</html>

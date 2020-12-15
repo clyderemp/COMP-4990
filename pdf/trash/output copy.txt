@@ -1,0 +1,159 @@
+                       Unofficial Transcript
+Name:                           John-Clyde Rempillo
+Student ID:                   104581065
+OEN:340696988
+Print Date:2020/04/27
+Beginning of Undergraduate Record 
+F2016
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Co-operative Education 
+CourseDescriptionAttemptedEarnedGrade
+COMPSCI  100Key Concepts in Computer Scie3.0003.00071
+COMPSCI  140Intro: Algorithms & Prog I3.0003.00074
+MATH  125Vectors and Linear Algebra3.0003.00062
+MATH  139Functions &Differentl Calculus3.0003.00060
+PHYSICS  190Introduction to Astronomy I3.0003.00088
+AttemptedEarned
+Term Average71.00015.00015.000
+Cumulative Average71.00015.00015.000
+Academic Standing: Good Standing  
+W2017
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Co-operative Education 
+CourseDescriptionAttemptedEarnedGrade
+PHIL  160Reasoning Skills3.0003.00066
+POLSCI  232Government &Politics of the US3.0003.00064
+COMPSCI  141Intro: Algorithms & Prog II3.0003.00052
+MATH  141Integral Calculus0.0000.000VW
+MATH  190Mathematical Foundations3.0000.00046
+Repeated:Repeat Excluded from Average    
+AttemptedEarned
+Term Average60.67012.0009.000
+Cumulative Average67.13027.00024.000
+Academic Standing: Good Standing   
+IS2017
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Co-operative Education
+                       Unofficial Transcript
+Name:                           John-Clyde Rempillo
+Student ID:                   104581065
+CourseDescriptionAttemptedEarnedGrade
+HISTORY  114Eur: Age of Discvry 15-18 Cent3.0003.00072
+PSYCH  116Intro: Psychology /Social Scie3.0003.00054
+MATH  141Integral Calculus3.0000.00041
+Repeated:Repeat Excluded from Average    
+AttemptedEarned
+Term Average63.0009.0006.000
+Cumulative Average66.30036.00030.000
+Academic Standing: Good Standing  
+F2017
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Co-operative Education 
+CourseDescriptionAttemptedEarnedGrade
+COMMSTUD  101Intro: Media and Society3.0000.00041
+COMMSTUD  140Introduction to Film Studies3.0003.00057
+PSYCH  115Intro: Psyc / Behavioural Scie3.0000.00035
+Repeated:Repeat Excluded from Average    
+AttemptedEarned
+Term Average49.0009.0003.000
+Cumulative Average63.42045.00033.000
+Academic Standing: Good Standing
+W2018
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+CourseDescriptionAttemptedEarnedGrade
+COMPSCI  212Obj-Orientd Progrmg Using Java3.0003.00065
+MATH  141Integral Calculus3.0003.00068
+Repeated:Repeat Included in Average    
+MATH  190Mathematical Foundations3.0003.00073
+Repeated:Repeat Included in Average    
+AttemptedEarned
+Term Average68.6709.0009.000
+Cumulative Average64.47054.00042.000
+Academic Standing: Good Standing
+                       Unofficial Transcript
+Name:                           John-Clyde Rempillo
+Student ID:                   104581065
+IS2018
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+CourseDescriptionAttemptedEarnedGrade
+PSYCH  115Intro: Psyc / Behavioural Scie3.0003.00064
+Repeated:Repeat Included in Average    
+COMPSCI  254Data Structures & Algorithms3.0003.00054
+AttemptedEarned
+Term Average59.0006.0006.000
+Cumulative Average63.82060.00048.000
+Academic Standing: Good Standing  
+F2018
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+CourseDescriptionAttemptedEarnedGrade
+COMPSCI  265Comp Architre I:Digital Design3.0003.00073
+COMPSCI  311Intro to Software Engineering3.0003.00081
+STATIST  205Statistics for the Sciences3.0003.00052
+AttemptedEarned
+Term Average68.6709.0009.000
+Cumulative Average64.55069.00057.000
+Academic Standing: Good Standing 
+W2019
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Minor in Mathematics 
+CourseDescriptionAttemptedEarnedGrade
+COMPSCI 2140Language, Grammar &Translators3.0003.00060
+COMPSCI 2800Software Development3.0003.00085
+DRAM 2100Speech Communication to Inform3.0003.00085
+STEN 1000Introduction to Business3.0003.00078
+AttemptedEarned
+Term Average77.00012.00012.000
+Cumulative Average66.63081.00069.00
+                       Unofficial Transcript
+Name:                           John-Clyde Rempillo
+Student ID:                   104581065
+Major Average:69.375
+Academic Standing: Good Standing
+IS2019
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Minor in Mathematics 
+CourseDescriptionAttemptedEarnedGrade
+COMP 3220Obj-Oriented Software Anal/Des3.0003.00090
+PHIL 1290Contemporary Moral Issues3.0003.00078
+SCIE 3990Internship0.0000.000VW
+AttemptedEarned
+Term Average84.0006.0006.000
+Cumulative Average67.96087.00075.000
+Major Average:0.000
+F2019
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+CourseDescriptionAttemptedEarnedGrade
+COMP 2310Theoretical Fdns: Computer Sci3.0003.00056
+COMP 2560System Programming3.0003.00063
+COMP 3150Database Management Systems3.0003.00074
+COMP 3670Computer Networks3.0003.00080
+AttemptedEarned
+Term Average68.25012.00012.000
+Cumulative Average68.00099.00087.000
+Major Average:0.000
+Academic Standing: Good Standing
+W2020
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+CourseDescriptionAttemptedEarnedGrade
+COMP 3300Operating Systems Fundamentals3.0003.00088
+COMP 4110Software Verification &Testing3.0003.00091
+COMP 4800Selected Tpcs in Software Engg3.0000.000
+COMP 4990AProject Mgmt: Techniques&Tools0.0000.000
+MATH 3270Number Theory3.0003.0005
+                       Unofficial Transcript
+Name:                           John-Clyde Rempillo
+Student ID:                   104581065
+AttemptedEarned
+Term Average76.33012.0009.000
+Cumulative Average68.760111.00096.000 
+IS2020
+Bachelor of Science (Honours) - Computer Science with Software Engineering 
+Minor in Mathematics 
+CourseDescriptionAttemptedEarnedGrade
+COMP 1410Intro: Algorithms & Prog II3.0000.000
+COMP 2097Soc Media&Mobile Tech-End User3.0000.000
+COMP 3340World Wide Web Info System Dev3.0000.000
+AttemptedEarned
+Term Average0.0009.0000.000
+Cumulative Average68.760120.00096.000
+End of Unofficial Transcript

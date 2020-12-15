@@ -1,0 +1,75 @@
+
+		<div id="mainpage"  class="main-panel">
+			<div class="content">
+				<div class="panel-header bg-primary-gradient">
+					<div class="page-inner py-5">
+						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+							<div>
+								<div class="container">
+									<img src="../../assets/img/MyAccount/myaccount2.png" alt="Avatar" class="profilePic">
+									<div class="overlay">
+									  <button class="btn text">Change
+									  </button>
+									</div>
+								</div>
+								  
+								<h2 id=welcomeUser class="text-white pb-2 fw-bold">Loading user...</h2>
+							</div>
+							<div class="ml-md-auto py-2 py-md-0">
+								<a href="#" class="btn btn-white btn-border btn-round mr-2">Edit myProfile</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-inner mt--5">
+					<div class="row mt--2">
+						<div class="col-md-9">
+							<div class="card full-height">
+								<div class="card-body">
+									<div class="card-title">General Information</div>
+									<div class="card-category" id="userinfo">loading user information...</div>
+									<div class="d-flex flex-wrap justify-content-around pb-2 pt-4" id="genInfoGraphs">
+										<div class="px-2 pb-2 pb-md-0 text-center">
+											<div id="cumulative"></div>
+											<h6 id="cumulative-title" class="fw-bold mt-3 mb-0"></h6>
+										</div>
+										<div class="px-2 pb-2 pb-md-0 text-center">
+											<div id="major"></div>
+											<h6 id="major-title" class="fw-bold mt-3 mb-0"></h6>
+										</div>
+										<div class="px-2 pb-2 pb-md-0 text-center">
+											<div id="credits"></div>
+											<h6 id="credits-title" class="fw-bold mt-3 mb-0"></h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" id="semesterReport">
+							<div class="card full-height">
+								<div class="card-body">
+									<div class="card-title">myPeers</div>
+									<div class="row py-3"  id="semReportContent">
+										<div class="col-md-4 d-flex flex-column justify-content-around">
+											<div>
+												<h6 class="fw-bold text-uppercase text-success op-8">Highest Average</h6>
+												<h3 class="fw-bold" id=highestSem></h3>
+											</div>
+											<div>
+												<h6 class="fw-bold text-uppercase text-danger op-8">Lowest Average</h6>
+												<h3 class="fw-bold" id=lowestSem></h3>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div id="chart-container">
+												<canvas id="semesterGraph"></canvas>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

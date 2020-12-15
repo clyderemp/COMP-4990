@@ -1,0 +1,42 @@
+.profilePic{
+    width: 20%;
+    height: 20%;
+    border: 2px solid #fff;
+    display: block;
+    height: auto;
+}
+
+.profilePic:hover{
+    border: 5px solid #fff;
+}
+
+.container {
+    position: relative;
+    width: 10%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 19%;
+    opacity: 0;
+    transition: 0.1s ease;
+    background-color: #fff;
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .text {
+    margin-top: 50%;
+    margin-left: 50%;
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

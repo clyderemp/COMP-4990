@@ -1,0 +1,39 @@
+1.	I enjoy sharing what I have seen with my eyes.
+2.	I am good at solving visual puzzles.
+3.	I am able to picture things clearly in my head.
+4.	I visualize characters and settings when I read a story.
+5.	I refine my ideas by talking and "thinking out loud".
+6.	My favorite memories involve action or physical activity.
+7.	I am expressive and use many gestures.
+8.	I enjoy crafts and making things.
+9.	I need to take breaks from sitting and re-energize by moving around.
+10.	When spelling, I try to picture how a word looks.
+11.	Instructions that consist mostly of illustrations are helpful to me.
+12.	I enjoy being read to.
+13.	I am distracted by sounds.
+14.	Lectures capture my attention.
+15.	I sound out a word when trying to spell it.
+16.	I have good coordination and motor skills.
+17.	When I can't figure something out, my instinct is to ask someone to explain it.
+18.	Doing work with my hands is satisfying.
+19.	I am good at taking things apart and putting them back together.
+20.	I am quick at finding my way with a map.
+21.	I enjoy learning by reading and looking at books.
+22.	I like working with tools.
+23.	I am good at following verbal directions.
+24.	I remember people's faces.
+25.	I am good at remembering people's names.
+26.	Movement around me is distracting.
+27.	When having trouble with something, I experiment until I get it right.
+28.	I prefer talking on the phone over email.
+29.	I memorize something by repeating it out loud.
+30.	I need charts and diagrams to help me understand information.
+31.	I get excited about learning through hands-on experience.
+32.	I tap my foot, fidget or eat while I read or study.
+33.	I learn a lot from discussions.
+34.	If asked, I can add numbers without writing them down.
+35.	I like to shake hands, hug or pat others on the back.
+36.	I enjoy listening to people talk on radio shows, audio recordings, etc.
+37.	Visual aids and handouts make learning easier for me.
+38.	I start doing things before reading the instructions.
+39.	I can easily follow written directions.

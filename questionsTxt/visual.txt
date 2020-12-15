@@ -1,0 +1,7 @@
+VISUAL
+1.	Find the relation in the following rational expression ?
+{2,-1,1,12,4}-->1 
+2.	Find the relation in the following rational expression	20 : 12 :: 5 : ?
+{3,15/4,3.5,2,5/3}-->0
+3.	Find the relation in the following rational expression	4 : 256 :: 5 : ?
+{526,625,125,726}-->1

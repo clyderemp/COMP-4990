@@ -1,0 +1,89 @@
+
+
+.transcript-div{
+	border: 2px solid #fff;
+    display: inline-block;
+}
+
+#cumulative,
+#major,
+#credits{
+    font-family: monospace;
+    font-size: 20px;
+    color: #ffcd24;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#addinfo,
+#progresscontent{
+    padding-top: 50px;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}
+
+#progresscontent div div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#semestercontent, #calcmyaverage-content{
+    padding-top: 50px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width: 100%
+}
+
+#sembtn{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.calcInput{
+    width: 80px;
+    height: 40px;
+    color: #005596;
+    text-align: center;
+}
+
+.calcInputform{
+    padding: 5%;
+    text-align: justify;
+}
+
+.calcInputform #calcResults{
+    padding-top: 5%;
+    text-align: center;
+    color: #ffcd24;
+    font-size: 30px;
+}
+
+.sem-table{
+    text-align: justify;
+    stroke-width: 100%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th{ 
+    padding-top: 20px;
+    text-align: left;
+    font-size: 30px;
+    color: #ffcd24;
+  }
+  
+  
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+   #course-info{
+        text-align: center;
+    }

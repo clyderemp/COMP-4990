@@ -1,0 +1,51 @@
+INTERPERSONAL
+1) I can detect the mood of others by looking at them as we converse.
+{Yes,No} --> 0
+2) I find it easy to see things from someone else's point of view.
+{Yes,No} --> 0
+3) When I talk to someone, I put myself in his or her shoes.
+{Yes,No} --> 0
+4) I can tell when someone doesn't understand what I'm saying.
+{Yes,No} --> 0
+5) When talking to people, I pay attention to their body language (e.g. facial expression, hand movement, etc.).
+{Yes,No} --> 0
+6) I manage to express my ideas clearly.
+{Yes,No} --> 0
+7) I feel free to politely voice my disagreement with someone in a position of authority.
+{Yes,No} --> 0
+8) I am completely at ease when a conversation shifts to the topic of feelings.
+{Yes,No}--> 0
+9) People don't get what I am saying.
+{Yes,No} --> 0
+10) When I know what someone is going to say, I finish the sentence for him or her.
+{Yes,No} --> 0
+11) Emotionally charged situations make me uncomfortable.
+{Yes,No} --> 0
+12) People tend to misinterpret what I say.
+{Yes,No} --> 0
+13) I find it hard to express my feelings to others.
+{Yes,No} --> 0
+14) I have difficulty putting my thoughts into words.
+{Yes,No} --> 0
+15) I have to repeat myself often because people don't understand my message the first time around.
+{Yes,No} --> 0
+16) If I don't understand someone's explanation the first time around, I feel stupid asking for clarification.
+{Yes,No} --> 0
+17) I tend to postpone or avoid discussing touchy topics.
+{Yes,No} --> 0
+18) I find it difficult to express my opinions when others don't share them.
+{Yes,No} --> 0
+19) I tend to clam up when dealing with someone I find intimidating.
+{Yes,No} --> 0
+20) I try to divert or end conversations that don't interest me.
+{Yes,No} --> 0
+21) Interpersonal Communication is:
+{The process of message transaction between two people.,Internal use of language or thought.} --> 0
+22) Another name for interpersonal communication is
+{mass communication,face to face public communication,dyadic communication,virtual reality} --> 2
+23) Which of the following is an example of mediated communication?
+{A newscaster delivers the weather report on the six o'clock news.,Two friends gossip with one another.,Students work on a class project together.,A politician addresses a nominating convention.} --> 0
+24) Which of these is dyadic communication?
+{two sisters arguing,a husband and wife making plans for the weekend,a coach and player discussing last week's game,All of these are correct.} --> 3
+25) In most situations, competent communicators will
+{be able to choose from a wide range of behaviors.,demonstrate empathy.,employ self-monitoring behaviors.,All of these are correct.} --> 3

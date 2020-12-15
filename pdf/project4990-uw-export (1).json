@@ -1,0 +1,23 @@
+{
+  "postsecondary" : {
+    "uwindsor" : {
+      "info" : "CLYDE REMPILLO",
+      "info" : "ANOOTHER ONE"
+    }
+  },
+  "highschool" : {
+    "uwindsor" : {
+      "info" : "CLYDE REMPILLO"
+    }
+  },
+  "gradeschool" : {
+    "uwindsor" : {
+      "info" : "CLYDE REMPILLO"
+    }
+  },
+  "preschool" : {
+    "uwindsor" : {
+      "info" : "CLYDE REMPILLO"
+    }
+  }
+}

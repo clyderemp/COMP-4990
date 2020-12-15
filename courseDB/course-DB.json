@@ -1,0 +1,178 @@
+{
+  "tempdoc" : {
+    "University of Windsor" : {
+      "CMAF" : {
+        "1010" : {
+          "coursename" : "Intro: Media and Society"
+        }
+      },
+      "COMP" : {
+        "1000" : {
+          "coursename" : "Key Concepts in Comp-Sci",
+          "days" : "Tuesday,Thursday",
+          "endtime" : "12:50",
+          "starttime" : "11:30"
+        },
+        "1047" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Computer Concepts for End-Users",
+          "days" : "Tuesday,Thursday",
+          "endtime" : "12:50",
+          "starttime" : "11:30"
+        },
+        "1400" : {
+          "coursename" : "Intro to Algorithms I",
+          "days" : "Monday,Wednesday",
+          "difficulty" : "low",
+          "endtime" : "12:50",
+          "instructor" : "Clyde Rempillo",
+          "learning_style" : "high",
+          "starttime" : "10:00",
+          "workload" : "low"
+        },
+        "1410" : {
+          "coursename" : "Intro to Algorithms II",
+          "difficulty" : "low",
+          "instructor" : "Haley LaBute",
+          "learning_style" : "high",
+          "profEmail" : "haleylabute@gmail.com",
+          "workload" : "low"
+        },
+        "2057" : {
+          "coursename" : "Intro to the Internet",
+          "difficulty" : "low",
+          "instructor" : "Clyde Rempillo",
+          "learning_style" : "high",
+          "workload" : "low"
+        },
+        "2067" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Programming for Beginners"
+        },
+        "2077" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Problem Solving & Info: Internet"
+        },
+        "2097" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Social Media & Mobile Tech-End Users"
+        },
+        "2120" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Obj-Oriented Programming using Java"
+        },
+        "2310" : {
+          "coursename" : "Theoretical Foundations",
+          "difficulty" : "low",
+          "instructor" : "Clyde Rempillo",
+          "learning_style" : "high",
+          "profEmail" : "rempillj@uwindsor.ca",
+          "workload" : "low"
+        },
+        "2540" : {
+          "coursename" : "Data Structures and Algorithms"
+        },
+        "2560" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Systems Programming"
+        },
+        "2650" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Computer Architecture I: Digital Design"
+        },
+        "2707" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Advanced Website Design"
+        },
+        "2980" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Co-op Work Term I"
+        },
+        "3057" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Cyber-Ethics"
+        },
+        "3220" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Object-Oriented Software Analysis & Design"
+        },
+        "3300" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Operating Systems Fundamentals"
+        },
+        "3340" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "World Wide Web Info System Development"
+        },
+        "3670" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Computer Networks"
+        },
+        "3980" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Co-op Work Term II"
+        },
+        "4970" : {
+          "Difficulty" : "Easy",
+          "Learning-Style" : "Application",
+          "Workload" : "Medium",
+          "coursename" : "Co-op Work Term III"
+        },
+        "4980" : {
+          "coursename" : "Co-op Work Term IV",
+          "difficulty" : "low",
+          "instructor" : "Clyde Rempillo",
+          "learning_style" : "high",
+          "profEmail" : "rempillj@uwindsor.ca",
+          "workload" : "low"
+        },
+        "4960A" : {
+          "coursename" : "Research Project - Part 1",
+          "difficulty" : "low",
+          "instructor" : "Clyde Rempillo",
+          "learning_style" : "high",
+          "profEmail" : "rempillj@uwindsor.ca",
+          "workload" : "low"
+        },
+        "4960B" : {
+          "coursename" : "Research Project - Part 2",
+          "difficulty" : "low",
+          "instructor" : "Clyde Rempillo",
+          "learning_style" : "high",
+          "profEmail" : "rempillj@uwindsor.ca",
+          "workload" : "low"
+        }
+      }
+    }
+  }
+}

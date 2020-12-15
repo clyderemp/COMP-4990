@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>MyAccount - Professor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/preloader.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="icon" href="../assets/img/logo2.jpg" width=100% height=100%>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper-->
+			<div id="wrapper">
+				<div class=sequence>
+					<div id="loader-wrapper">
+						<div id="loader"></div>
+					</div>
+				</div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a onclick=resetAllPanels() href="#home" class="icon solid fa-home"><span>myHome</span></a>
+						<a onclick=resetAllPanels() href="#search" class="icon solid fa-search"><span>mySearch</span></a>
+						<a onclick=resetAllPanels() href="#usermanager" class="icon solid fa-user"><span>myUsers</span></a>
+						<a onclick=resetAllPanels() href="#coursemanager" class="icon solid fa-book-open"><span>Courses</span></a>
+						<a onclick=adminlogout() href="#" class="icon solid fa-sign-out-alt"><span>Sign out</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- MAINE USER INFO -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1 id=profname></h1>
+									<p id=profschool></p>
+									<p id=idnum></p>
+									<p id=adminloademail></p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span><span></span></span>
+									<img src="../assets/img/logo2.JPG" alt="" />
+								</a>
+							</article>
+
+						<!-- SEARCH MANAGER -->
+							<article id="search" class="panel">
+								<header>
+									<a><img href="#home" src="../assets/img/logo2.JPG" width="10%"></a>
+									<h2 class=blue><em class=yellow>my</em>Search</h2>
+								</header>
+								<p>
+									Search for any current user on the database
+								</p>
+								<section>
+									<div class="panel">
+										<div id=box class=box>
+											<select id="user-drop" name="school" value="none" required>
+												<option value="none">---Choose the usertype---</option>
+												<option value="student">Student</option>
+												<option value="parent">Parent</option>
+												<option value="staff">Staff</option>
+												<option value="admin">Admin</option>
+											  </select><br><br>
+											  <p class=emailTitle>Email address:</p>
+											<input class=searchInput type="email" name="" id="email" required><br>
+											<div id=searchbtn><button onclick=searchStudent()>Search</button> </div>
+											
+											<div id=resultsContent class=resultsContentPanel>
+												
+												<h2 id="resultsfor"></h2>
+												<div id=load class="loader"></div>
+												<div id=searchTable>
+													<table class="searchTable">
+														<thead>
+															<tr class="table-header">
+																<th scope="col">&nbsp;</th>
+																<th scope="col">Name</th>
+																<th scope="col" class="text-center">School</th>
+																<th scope="col" class="text-center">Email</th>
+																<th scope="col" class="text-center">ID</th>
+																<th scope="col">&nbsp;</th>
+															</tr>
+														</thead>
+														<tbody id=resultTable>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- ACCOUNT MANAGER -->
+							<article id="usermanager" class="panel">
+								<header>
+									<a><img href="#home" src="../assets/img/logo2.JPG" width="10%"></a>
+									<h2 class=blue><em class=yellow>my</em>AccountManager</h2>
+									<div id=box class=box>
+										<select id="manager-drop"  value="none" onchange=showForm(this.value) required>
+											<option value="none">Select the user type</option>
+											<option value="student">Student</option>
+											<option value="parent">Parent</option>
+											<option value="staff">Staff</option>
+											<option value="admin">Admin</option>
+										  </select><br><br>
+									</div>
+								</header>
+								<form id=formPanel>
+									<div><p id=error></p>
+										<div class="row">
+											<div id=fnameForm class="col-6 col-12-medium">
+												<input type=text id="fname" placeholder="First Name">
+											</div>
+											<div id=lnameForm class="col-6 col-12-medium">
+												<input type=text id="lname" placeholder="Last Name">
+											</div>
+											<div id=schooldropForm class="col-12">
+												<select id="school-drop" value="none">
+													<option value="none">Select the school</option>
+													<option value="University of Windsor">University of Windsor</option>
+													<option value="St. Clair College">St. Clair College</option>
+													<option value="other">Other</option>	
+												</select>
+											</div>
+											<div id=studentIdForm class="col-12">
+												<input type="number" id="studentId" placeholder="Student Number">
+											</div>
+					
+											<div id=staffIdForm class="col-12">
+												<input type="number" id="staffId" placeholder="Staff Number">
+											</div>
+											<div id=emailForm class="col-6 col-12-medium">
+												<input type="email" id="emailField" placeholder="Email">
+											</div>
+											<div id=passwordForm class="col-6 col-12-medium">
+												<input type="password" id="passwordField" placeholder="Password">
+											</div>
+											<div id=createBtn class="col-12">
+												<button style="width:100%;" onclick=createAccount()>Create Account</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+							<!--MYCOURSE-->
+							<article id="coursemanager" class="panel">
+									<header>
+										<a><img href="#home" src="../assets/img/logo2.JPG" width="10%"></a>
+										<h2 class=blue><em class=yellow>my</em>CourseManager</h2>
+									</header>
+									<p>
+										Here you will be able to assign courses to professors and have them evaluate the course to help students determine courses to take.
+										You will only be able to add courses that are currently offered in the upcoming semester.
+									</p>
+									<section>
+										<div class="panel">
+											<div class=box>
+												<p class=emailTitle>Email address:</p>
+												<input class=searchInput type="email" name="" id="emailProf" required><br>
+												<div id=searchbtn2><button onclick=searchProf()>Search</button> </div>
+												
+												<!--RESULT TABLE FOR ALL PROFS-->
+												<div id=resultsContent2 class=resultsContentPanel>
+													<h2 id="resultsfor2"></h2>
+													<div id=load2 class="loader"></div>
+													<div id=searchTable2>
+														<table class="searchTable">
+															<thead>
+																<tr class="table-header">
+																	<th scope="col">&nbsp;</th>
+																	<th scope="col">Name</th>
+																	<th scope="col" class="text-center">School</th>
+																	<th scope="col" class="text-center">Email</th>
+																	<th scope="col" class="text-center">ID</th>
+																	<th scope="col">&nbsp;</th>
+																</tr>
+															</thead>
+															<tbody id=resultTable2>
+															</tbody>
+														</table>
+													</div>
+												</div>
+
+												<!--TABLE FOR THE COURSES-->
+												<div id=viewAccount2 class=resultsContentPanel>
+													<h2 id=fullname>NAME</h2>
+													<p id=schoolname></p>
+													<div id=load3 class="loader"></div>
+													<table id=loadtable class="coursesTable">
+														<thead>
+															<tr class="table-header">
+																<th scope="col">&nbsp;</th>
+																<th scope="col">Course Code</th>
+																<th scope="col" class="text-center">Course Name</th>
+																<th scope="col">&nbsp;</th><th scope="col">&nbsp;</th>
+															</tr>
+														</thead>
+														<tbody id=coursesResult>
+														</tbody>
+														<tbody id=addCoursesTable>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</section>
+								</article>
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>myAcAdvisor&copy; 2020.</li><li><a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery-1.11.3.min.js"></script>
+			
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/userfileLoader.js"></script>
+			<script src="assets/js/collapsibleManager.js"></script>
+			
+			<script src="../authorizepage/js/firebase.js"></script>
+			<script src="assets/js/search.js"></script>
+			<script src="../authorizepage/js/adminlogin.js"></script>
+			<script src="assets/js/accountManager.js"></script>
+			<script src="assets/js/courseManager.js"></script>
+			<script src="assets/js/resetAllPanels.js"></script>
+
+	</body>
+</html>
